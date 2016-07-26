@@ -1,0 +1,95 @@
+.wrap {
+	width: 1000px;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	margin: 25px 0 10px 0;
+	font-size: 3em;
+	line-height: 1.5em;
+	font-family: Georgia;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #8E0B00;
+	animation: title 10s ease infinite;
+}
+
+.kind {
+	float: left;
+	margin: 10px;
+}
+
+html, body {
+	margin: 0; padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: "Open Sans", arial, sans-serif;
+	font-weight: 500;
+	background-color: #FFFFFF;
+}
+
+
+.kind {
+	animation: kind 10s ease infinite;
+}
+
+@keyframes title {
+	0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+
+}
+
+@keyframes kind {
+	0% {
+		opacity: 0;
+	}
+	12.5% {
+		opacity: 0.25;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	37.5% {
+		opacity: 0.75;
+	}
+	50% {
+		opacity: 1; 
+	}
+	62.5% {
+		opacity: 0.75;
+	}
+	75% {
+		opacity: 0.5;
+	}
+	87.5% {
+		opacity: 0.25;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#tg {
+	transition: all 2s;
+	-moz-transition: all 2s;
+	-webkit-transition: all 2s;
+}
+
+#tg:hover {
+	margin-left: 250px;
+}
+
+
