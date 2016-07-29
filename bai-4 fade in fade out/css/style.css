@@ -82,19 +82,8 @@ body {
 	}
 }
 
-#tg {
-	transition: all 2s;
-	-moz-transition: all 2s;
-	-webkit-transition: all 2s;
-}
-
-#tg:hover {
-	margin-left: 250px;
-}
 
 #tg {
-	float: right;
-	width: 200px;
-}
+	margin-left: 600px;
 
 
