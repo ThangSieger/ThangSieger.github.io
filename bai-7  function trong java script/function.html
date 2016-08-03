@@ -26,9 +26,49 @@
 	}	
 
 // Bai 5
-	function min(x[]) {
-			
+	var a = [1,22,3,4,56];
+	function min(a) {
+		return a.sort(function(a,b) {return(a - b)})[0];
 	}
+
+// Bai 6	
+	var ds = ["Hoang", "Quy", "Hoai", "Thanh", "Tu"]
+	function sx(ds) {
+		return ds.sort();
+	}
+
+// Bai 7
+
+	var aboutMe = function(){
+		document.write("Xin chao toi la "+this.firstName+" "+this.lastName+". Nam nay toi "+this.age+" tuoi. <br>" )
+	}	
+
+	var student = {
+		firstName: "Lo",
+		lastName: "Tan",
+		age: 20,
+		say: function(){} // aboutMe
+	}
+	student.say = aboutMe;
+	student.say();
+
+	var teacher = {
+		firstName: "Luu",
+		lastName: "Bi",
+		age: 30,
+		say: function(){} // aboutMe
+	}
+	teacher.say = aboutMe;
+	teacher.say();
+
+	var parents = {
+		firstName: "Jack",
+		lastName: "London",
+		age: 35,
+		say: function(){}
+	}
+	parents.say = aboutMe;
+	parents.say();
 
 </script>
 
