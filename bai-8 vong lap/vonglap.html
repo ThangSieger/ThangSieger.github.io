@@ -1,37 +1,64 @@
 <html>
-<head> Vòng lặp </head>
-
+<head>
+	<title> Vòng lặp </title>
+	<meta charset="utf8">
+</head>
+<body>
+	<h2>Vòng lặp</h2>
+	<div id="demo"></div>
+</body>
 <script type="text/javascript">
 	
 
 // Bai 1 
-var n;
-	function giaithua(n) {
-		if (n <0) {
-			document.write("<p> khong tinh duoc giai thua </p>");
+function giaithua(n) {
+		if (n < 0) {
+			document.write("<p> Không tính được giai thừa </p>");
 		}
 		else {
 		 	var result = 1;
 			for (var i = n; i > 0; i--)
 			result *= i; 
-			document.write("<p> "+n+ " giai thua la </p>" + result );
+			document.write("<span> " + n + "! là " + result +"</span>" );
 		}
-	}
 }
 
 // Bai 2
-var chuoi = ["H" + "e" + "l" + "l" + "o"];
-document.write(chuoi.valueOf());
-document.write('</br>');
-mang.reverse();
-document.write(chuoi.valueOf());
+function daochuoi(words) {
+	// words = prompt("Write a word or a sentence: "); 
+	if (words != null) {
+	var mang = words.split(""); // tao thanh 1 mang cac ki tu
+	// mang.sort();
+	mang.reverse(); // dao nguoc mang do
+	var dao = mang.join(""); // noi mang lai thanh 1 string
+	document.getElementById("demo").innerHTML = dao; // in string do vao the co id la demo
+	}
+	return dao;
+}
 
-(nhap chuoi 
---> cat chuoi thanh mang  http://www.w3schools.com/jsref/jsref_split.asp
----> dao vi tri reserve
----> noi mang thanh chuoi http://www.w3schools.com/jsref/jsref_join.asp)
+// Bai 3
+num = prompt("Write number: ");
+	function duplicate(n) {
+		var i;
+		for (var i =0; i <n ; i++) {
+			document.write(+num +"-");
+		}
+		document.write(+num);
+	}
+	duplicate(9);
 
-mai lam
+// Bai 4
+n = prompt("Write quality of students: ");
+ds[] = prompt("Nhập tên học viên theo kiểu mảng: ")
+function 
+
+
+
+
+
+
+
+
 
 </script>
 
