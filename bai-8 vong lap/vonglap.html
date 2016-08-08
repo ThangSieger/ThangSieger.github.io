@@ -60,13 +60,25 @@
 /*var so = [3, 6, 8, 7, 2, 9, ,4];
 function gapdoi(so) {
 	n = so.length;
-	document.write("[")
+	document.write("[");
 	for (var i = 0; i < n; i++) {
 	so[i] = 2 * so[i];
 	document.write("<spap>" + " " + so[i]  + "</span>");
 	}
 	document.write("]");
 }*/
+
+//Bai 6
+function sodu(mangos) {
+	var mangso = [3, 4, 5, 8, 9, 7, 1, 4];
+	n = mangso.length;
+	document.write("[");
+	for (var i = 0; i < n; i++) {
+		mangso[i] = mangso[i] % 2;
+		document.write("<span>" + " " + mangso[i] + "</span>");
+	}
+	document.write("]");
+}
 
 
 
