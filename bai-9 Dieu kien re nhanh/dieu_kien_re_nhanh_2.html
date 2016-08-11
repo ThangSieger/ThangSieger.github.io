@@ -8,11 +8,81 @@
 	<div id="demo"></div>
 </body>
 <script type="text/javascript">
-//Bai 1
-var now = new Date();   
+
+// Bai 1
+/*var now = new Date();   
 var date = now.getDate();   
 var month = now.getMonth() + 1;   
-var year = now.getFullYear();   
+var year = now.getFullYear(); 
+document.write("Hôm nay là ngày " + date + " tháng " + month + " năm " + year +"<br/>");
+
+switch (month) {
+    case 0:
+        monat = "mùa đông";
+        break;
+    case 1:
+        monat = "mùa xuân";
+        break;
+    case 2:
+        monat = "mùa xuân";
+        break;
+    case 3:
+        monat = "mùa xuân";
+        break;
+    case 4:
+        monat = "mùa hè";
+        break;
+    case 5:
+        monat = "mùa hè";
+        break;
+    case 6:
+        monat = "mùa hè";
+        break;
+    case 7:
+        monat = "mùa thu";
+        break;
+    case 8:
+        monat = "mùa thu";
+        break;
+    case 9:
+    	monat = "mùa thu";
+    	break;
+    case 10:
+    	monat = "mùa đông";
+    	break;
+    case 11:
+    	monat = "mùa đông";	
+    	break;	
+}
+document.write("Đây là " + monat);*/	
+
+//Bai 2
+function catchuoi(chuoi) {
+
+	document.write("Tham số vừa nhập vào là " + typeof(chuoi) + "<br/>");
+
+	if (typeof(chuoi) =="number"){
+		var n = chuoi.toString();
+		document.write("<br/>")
+		document.write ("Tham số vừa nhập vào biến đổi thành " + typeof(n) + "<br/>");
+		if (n.length < 10) {
+			document.write (n);
+ 			} else {
+ 				n = n.slice(0,10);
+ 				document.write (chuoi + +" " + " ..." + "<br/>");
+ 			}	
+	} else if (typeof(chuoi) == "string") {
+		var n = chuoi;
+		if (n.length < 10) {
+				document.write (n + "<br/>");
+		} else {
+			n = n.slice(0,10);
+			document.write (n + " " + " ..." + "<br/>");
+		}
+	} else {
+ 		document.write ("Không xử lý được" + "<br/>");
+	}			
+}
 
 	
 </script>
