@@ -15,7 +15,7 @@
 		<h1 class = "title">Lorem Ipsum</h1>
 
 			<h2><i>What is Lorem Ipsum?</i></h2>
-			<p id = "p1" class = "doanvan">
+			<p id="p1" class="doanvan">
 				<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 			</p>
 
@@ -44,11 +44,118 @@
 			for (var i = 0; i < paragraphs.length; i++) {
 				paragraphs[i].style.fontSize = x + "px";
 			}
-
-
-			
 		}
 
+		changeFontSize(20);
+
+		function increaseFontSize(id) {
+			// var paragraphs = document.getElementsByClassName("doanvan");
+			var paragraph = document.getElementById(id);
+			
+			// Lay ra fontSize cua p
+			var size = paragraph.style.fontSize;
+			console.log(size);
+
+            // Convert sang so de so sanh
+			var fontSize = parseInt(size);
+
+            // Kiem tra xem co nho hon 30 hay khong
+			if (fontSize < 30) {
+				// Tang them 1 don vi
+				fontSize += 1;
+
+				// Set font size bang so moi
+				paragraph.style.fontSize = fontSize + "px";
+
+			} else {
+				// Vuot qua 30 thi bao loi
+				document.write ("Kích thước đã đạt 30px <br/>"); 
+			}
+		}
+
+		function decreaseFontSize(id) {
+
+			//Lay doan van
+			var paragraph = document.getElementById(id);
+
+			//Lay font size cua doan van
+			var size = paragraph.style.fontSize; 
+			console.log(size);
+
+			//Convert font size sang dang so de so sanh
+			var fontSize = parseInt(size);
+
+			//So sanh
+			if (fontSize > 10) {
+
+				//Giam di 1 don vi
+				fontSize -= 1;
+
+				//Set lai font size
+				paragraph.style.fontSize = fontSize + "px";
+
+			} else {
+
+				document.write ("Kích thước đã nhỏ hơn 10 <br/>");
+			}
+
+		}
+
+		function changeColor() {
+
+			//Lay doan van thu nhat
+			var paragraph1 = document.getElementById("p1");
+			console.log(paragraph1);
+
+			//Chuyen doan van thu nhat thanh mau green
+			paragraph1.style.color = "green";
+
+			//Lay doan van thu hai
+			var paragraph2 = document.getElementById("p2");
+			console.log(paragraph2);
+
+			//Chuyen doan van thu hai thanh mau blue
+			paragraph2.style.color = "blue";
+
+			//Lay doan van thu ba
+			var paragraph3 = document.getElementById("p3");
+			console.log(paragraph3);
+
+			//Chuyen doan van thu ba thanh mau yellow
+			paragraph3.style.color = "yellow";
+
+			//Lay doan van thu tu
+			var paragraph4 = document.getElementById("p4");
+			console.log(paragraph4);
+
+			//Chuyen doan van thu tu thanh mau red
+			paragraph4.style.color = "red"; 
+
+		}
+
+		function changeBgColor() {
+
+			//Doi mau nen bai van
+			document.body.style.background = "#f3f3f3"; 
+		}
+
+			var paragraph2 = document.getElementById("p2").innerHTML;
+
+			//Lay noi dung doan van mot
+			var paragraph1 = document.getElementById("p1").innerHTML;
+
+
+
+		function copyContent() {
+			//Lay noi dung doan van hai
+			var paragraph2 = document.getElementById("p2").innerHTML;
+
+			//Lay noi dung doan van mot
+			var paragraph1 = document.getElementById("p1").innerHTML;
+
+			//Truyen noi dung doan van hai vao doan van mot
+			document.getElementById("p1").innerHTML = paragraph2;
+		}
 
 
 	</script>
