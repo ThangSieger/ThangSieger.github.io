@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/design.css">
+	</head>
+	<title>Calculator</title>
+
+<body>
+	<div id="calculator"> 
+		<form>
+
+			<input type="text" id="display" disabled><br>
+
+			<button type="button" class="keys" onclick="addtoscreen('c')">C</button>
+			<button type="button" value="" class="keys" onclick="backspace()"><--</button>
+			<button type="button" value="" class="keys" onclick="power(3)">X^3</button>
+			<button type="button" value="" class="keys" onclick="addtoscreen('+')">+</button><br>
+
+			<button type="button" value="9" class="keys" onclick="addtoscreen('9')">9</button>
+			<button type="button" value="8" class="keys" onclick="addtoscreen('8')">8</button>
+			<button type="button" value="7" class="keys" onclick="addtoscreen('7')">7</button>
+			<button type="button" value="-" class="keys" onclick="addtoscreen('-')">-</button><br>
+
+			<button type="button" value="6" class="keys" onclick="addtoscreen('6')">6</button>
+			<button type="button" value="5" class="keys" onclick="addtoscreen('5')">5</button>
+			<button type="button" value="4" class="keys" onclick="addtoscreen('4')">4</button>
+			<button type="button" value="*" class="keys" onclick="addtoscreen('*')">*</button><br>
+
+			<button type="button" value="3" class="keys" onclick="addtoscreen('3')">3</button>
+			<button type="button" value="2" class="keys" onclick="addtoscreen('2')">2</button>
+			<button type="button" value="1" class="keys" onclick="addtoscreen('1')">1</button>
+			<button type="button" value="/" class="keys" onclick="addtoscreen('/')">/</button><br>
+
+			<button type="button" value="0" class="keys" onclick="addtoscreen('0')">0</button>
+			<button type="button" value="." class="keys" onclick="addtoscreen('.')">.</button>
+			<button type="button" value="=" class="equal" onclick="answer()">=</button>
+			
+		</form>
+
+	</div>
+
+	<script src="js/javascript.js"></script>
+
+</body>
+
+</html>
