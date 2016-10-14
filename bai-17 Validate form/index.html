@@ -10,10 +10,10 @@
 	<h1>Đăng ký thành viên</h1>
 
 	<form action="result.html">
-		<input type="text" name="name" placeholder="Họ tên" required="required" />
-		<br/>
-		<input type="email" name="email" placeholder="Email" />
-		<br/>
+		<input type="text" name="name" id="name" placeholder="Họ tên"/>
+		<span class="error"></span><br/>
+		<input type="email" name="email" id="email" placeholder="Email" />
+		<span class="error"></span><br/>
 		<input type="password" name="password" placeholder="Mật khẩu" />
 		<br/>
 		<select name="year">
@@ -30,8 +30,33 @@
 		</br>
 		<input type="submit" value="Đăng nhập" />
 	</form>	
-
-
 </div>
+
+<script type="js/jquery-2.1.4.min.js"></script>
+<script>
+	$('#form-register').on('submit', function() {
+		var isValid = true;
+
+		if ($('#name').val().trim() == '') {
+			$('#name').next('span').text('Name is empty');
+			isValid = false;
+		} else {
+			$('#name').next('span').text('');
+		}
+
+		if ($('#email').val().match(^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$) == null) {
+			$('#email').next('span').text('Email is invalid');
+			isValid = false;
+		} else {
+			$('#email').next('span').text('');
+
+		}
+
+
+		return isValid;
+	})
+</script>
+
+
 </body>
 </html>
