@@ -12,39 +12,106 @@
 
 <body>
 	<header class="container">
+
 		<div>
 			<p>
 			</p>
 		</div>
-		<div class = "sign">
-			<div class = "signup">
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Đăng ký</button>
+
+		<div class="sign">
+			<div class="signup">
+				<!-- Button đăng ký -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangky">Đăng ký</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="dangky" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Đăng ký</h4>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Địa chỉ Email</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Mật khẩu</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>						  
+						  <div class="form-group">
+						    <label for="exampleInputhoten1">Họ và Tên</label>
+						    <input type="Name" class="form-control" id="exampleInputhoten1" placeholder="Name">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputtelefon1">Số điện thoại</label>
+						    <input type="Telephone" class="form-control" id="exampleInputtelefon1" placeholder="Telephone">
+						  </div>
+						  <button type="signup" class="btn btn-default">Đăng ký</button>
+						</form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
+
 			<div class = "signin">
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Đăng nhập</button>
+				<!-- Button đăng nhập -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button>
+
+				<!-- Đăng nhập -->
+				<div class="modal fade" id="dangnhap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Địa chỉ Email</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Mật khẩu</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>						  
+						  <div class="checkbox">
+						    <label>
+						      <input type="checkbox"> Ghi nhớ mật khẩu
+						    </label>
+						    <button style = "float: right;" type="signin" class="btn btn-default">Đăng nhập</button>
+						  </div>						  
+						</form>
+				      </div>				      
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>	
-		<div class = "header_bg">
-			<div class = "container">
-				<div class = "header">
-					<div class = "logo">
-						<a href = "trangchu01.html">
+
+		<div class="header_bg">
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<a href="trangchu01.html">
 							<img src="img/logo.png">	
 						</a>
 					</div>
-					<div class = "h_menu">
-							<a id = "touch-menu" class = "mobile-menu" href="#">Menu</a>
+					<div class="h_menu">
+							<a id="touch-menu" class = "mobile-menu" href="#">Menu</a>
 						<nav>
-							<ul class = "menu list-unstyled nav nav-pills">
-								<li role = "presentation">
+							<ul class="menu list-unstyled nav nav-pills">
+								<li role="presentation">
 									<a href="trangchu01.html" class="img-responsive">Trang chủ</a>
 								</li>
-								<li role = "presentation">
+								<li role="presentation">
 									<a href="khoahoc.html" class="img-responsive">Khóa học</a>
 								</li>														
-								<li role = "presentation">
+								<li role="presentation">
 									<a href="lienhe.html" class="img-responsive">Liên hệ</a>
 								</li>
 							</ul>
@@ -54,23 +121,124 @@
 				</div>	
 			</div>
 		</div>
+
 		<div>
 			<p>
 			</p>
 		</div>
+
 		<div id="banner">
         	<img src="img/banner_1.jpg" alt="banner" title="banner" class="img-responsive"/>  
-      	</div>
-      	<div>
+      	</div>      	
+    </header>	
+
+	<section class="container">
+		<div class="main_grid">
+			<div class="khoahoc" style="height: 100px;">
+				<h1 style ="text-align: center; color: white;"><div style="padding: 23px;">KHÓA HỌC MỚI</div></h1>					
+			</div>				
+		</div>
+
+		<div>
 			<p>
 			</p>
 		</div>
-	</header>	
 
+		<div class="row">
+			<div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal1">
+						<img src="img/CPP.jpg" alt="anh1" title="anh1" class="img-responsive"/>
+					</a>					
+					<div class="khung"> 		
+			            <h3>C++ cơ bản qua ví dụ thực tế</h3>
+			            <h4 class="doanvan gia">600,000đ</h4>		               
+			            <hr noshade size = 4>     
+			            <p class="doanvan">Khóa học C++ cơ bản qua ví dụ được thiết kế đặc biệt cho những người mới học, chưa biết gì về lập trình.
+			           	</p> 		          	 
+		           	</div> 
+	           	</div>    	
+	   		</div> 
+	        
+			<div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal2">
+						<img src="img/MachineLearning.jpg" alt="anh2" title="anh2" class="img-responsive"/>
+					</a>
+					<div class="khung"> 				
+			            <h3>Nhập môn Machine Learning</h3>
+			            <h4 class="doanvan gia">800,000đ</h4>     
+				        <hr noshade size = 4> 
+			       		<p class="doanvan">Học qua dự án nhỏ demo, ngôn ngữ lập trình Python, framework Scikit-Learn, TensorFlow, Mlib trên Spark, Deeplearning4J (For java and Spark integratable).
+		   				</p>    
+		   			</div>	
+		   		</div>	 	 	          	
+			</div>
+	        
+			<div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal3">
+						<img src="img/MagentoLogo.jpg" alt="anh3" title="anh3" class="img-responsive"/>
+					</a>
+					<div class="khung"> 
+						<h3>Xây dựng webiste bán hàng với Magento 2</h3>
+			            <h4 class="doanvan gia">800,000đ</h4>	        
+				        <hr noshade size = 4>	        
+				        <p class="doanvan">Magento là một mã nguồn mở tạo web thương mại điện tử nổi tiếng được viết trên ngôn ngữ PHP - Ngôn ngữ lập trình web phổ biến nhất hiện nay tại Việt Nam. 
+			           	</p> 
+		           </div> 
+		        </div>   	             	          	
+	        </div>
+	        
+			<div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal4">
+						<img src="img/php7.jpg" alt="anh4" title="anh4" class="img-responsive"/>
+					</a>
+					<div class="khung"> 			
+					    <h3>Lập trình PHP qua các dự án thực tế</h3>
+			            <h4 class="doanvan gia">700,000đ</h4>	        
+				        <hr noshade size = 4 >	        
+				        <p class="doanvan">PHP là mã nguồn mở, nó hoàn toàn miễn phí, hỗ trợ người dùng xây dựng website với chi phí tiết kiệm nhất, nhờ đó mà PHP đã trở nên phổ biến một cách rất nhanh chóng trong những năm qua.  
+				        </p>  
+				    </div>     
+			    </div>              	          	
+	        </div>
+		</div>
+		<br>	
+	</section>
 
-
-
-
+	<footer class="container">
+		<div class="wrap maunenchan">
+			<div class="row">
+				<div class="col-xs-4 col-md-4 ">
+					<ul>
+						<li><h3>Về chúng tôi</h3></li>
+						<li>Việc làm</li>
+						<li>Giảng viên</li>
+						<li>Cơ sở vật chất</li>
+					</ul>
+				</div>	
+				<div class="col-xs-4 col-md-4 ">
+					<ul>
+						<li><h3>Liên hệ</h3></li>
+						<li>Mr Cường: 090.220.9011</li>
+						<li>Mr Nghĩa: 096.440.7993</li>
+						<li>Mr Thắng: 096.423.0156</li>
+					</ul>
+				</div>
+				<div class="col-xs-4 col-md-4 ">
+					<ul>
+						<li><h3>Địa chỉ</h3></li>
+						<li>Số 14, ngõ 4, Nguyễn Đình Chiểu, Hà Nội</li>
+						<li>Mở cửa: 9:00 đến 18:00</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<br>
+	<br>	
 
 	<script type="text/javascript" src="javascript.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

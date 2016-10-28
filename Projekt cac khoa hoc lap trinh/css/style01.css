@@ -2,6 +2,10 @@
 	background: #01579B;
 }
 
+#banner {
+ width: 100%;
+}
+
 .mobile-menu {
 	display: none;
 	width: 100%;
@@ -61,6 +65,65 @@ ul {
 	margin-top: 15px;
 	float: right;
 	margin-right: 10px;
+}
+
+.span1_of_1 {
+    padding: 0;
+}
+
+.row-wrap{
+  margin: 0 !important;
+}
+
+.khoahoc {
+  background: #01579B;  
+}
+
+@media screen and (max-width: 2000px) {
+  .maunen {
+	background: #01579B;
+	margin: auto;
+	height: 500px;
+  }	
+  .doanvan {
+  	text-decoration-color: blue;
+  	font-size: 15px;
+  }
+} 
+
+@media screen and (max-width: 780px) {
+  .doanvan {
+    display: none;
+  }  
+}
+
+@media screen and (max-width: 380px) {
+  .doanvan {
+    display: none;
+  }  
+}
+
+.khung {
+	padding: 5px;
+	color: white;
+}
+
+.gia {
+	text-align: right;
+}
+
+.maunenchan {
+	background: #01579B;
+	color: white;	
+	padding: 0px;	
+}
+
+ul {
+	list-style: none;
+}
+
+.wrap {
+	max-width: 1140px;
 }
 
 
