@@ -93,7 +93,19 @@ ul {
 
 @media screen and (max-width: 780px) {
   .doanvan {
-    display: none;
+    display: none;	
+  }  
+  .maunen {
+	background: none;
+	margin: auto;
+	height: 360px;
+  }
+  .khoahoc {
+  	color: black;
+  	background: none;
+  }
+  .gia {
+  	color: black;
   }  
 }
 
