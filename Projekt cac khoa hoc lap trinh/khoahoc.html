@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" href="img/logo.png" />
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style01.css">
+	<link rel="stylesheet" type="text/css" href="css/khoahoc.css">
 </head>
 
 <body>
@@ -110,42 +110,83 @@
 								</li>
 								<li role="presentation">
 									<a href="khoahoc.html" class="img-responsive">Khóa học</a>
-								</li>	
+								</li>
 								<li role="presentation">
 									<a href="codefree.html" class="img-responsive">Code free</a>
-								</li>													
+								</li>														
 								<li role="presentation">
 									<a href="lienhe.html" class="img-responsive">Liên hệ</a>
 								</li>
 							</ul>
 						</nav>	
-							<script type="js/javascript.js"></script>		
+						<script type="js/javascript.js"></script>		
 					</div>	
 				</div>	
 			</div>
 		</div>
-
-		<div>
-			<p>
-			</p>
-		</div>
-
-		<div id="banner">
-        	<img src="img/banner_1.jpg" alt="banner" title="banner" class="img-responsive"/>  
-      	</div>      	
+		<br>				     	
     </header>	
 
-	<section class="container">
-		<div class="main_grid">
-			<div class="khoahoc" style="height: 100px;">
-				<h1 style ="text-align: center; color: white;"><div style="padding: 23px;">KHÓA HỌC MỚI</div></h1>					
-			</div>				
-		</div>
+	<section class="container">	
 
-		<div>
-			<p>
-			</p>
-		</div>
+		<div class="btn-group">
+			
+			<button type="button" class="btn btn-primary">Tất cả các khóa học</button>
+			<button type="button" class="btn btn-primary dropdown-toggle allkhoahoc" data-toggle1="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span class="caret"></span>
+			    <span class="sr-only">Toggle Dropdown</span>
+			</button>			 
+			<ul class="dropdown-menu">
+			    <li><a href="#">C++ cơ bản qua ví dụ thực tế</a></li>
+			    <li><a href="#">Nhập môn Machine Learning</a></li>
+			    <li><a href="#">Xây dựng webiste bán hàng với Magento 2</a></li>
+			    <li><a href="#">Lập trình PHP qua các dự án thực tế</a></li>
+			    <li><a href="#">Lập trình Python ứng dụng thực tế</a></li>
+			    <li><a href="#">Ruby on Rails 5 qua các dự án</a></li>
+			    <li><a href="#">Thiết kế RESTful WebServices</a></li>
+			    <li><a href="#">Lập trình IOS Swift với toàn bộ mã nguồn</a></li>
+			    <li><a href="#">Xây dựng website với Arrow Js CMS</a></li>
+			    <li><a href="#">Điện tử thực hành cho dân điện tử</a></li>
+			    <li><a href="#">Node.js xây dựng website tốc độ cao</a></li>
+			    <li><a href="#">Java căn bản kết hợp thực hành</a></li>			    
+			</ul>	
+			
+			
+			<button type="button" class="btn btn-primary">Cơ bản</button>
+			<button type="button" class="btn btn-primary dropdown-toggle allkhoahoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span class="caret"></span>
+			    <span class="sr-only">Toggle Dropdown</span>
+			</button>			
+			<ul class="dropdown-menu">
+			    <li><a href="#">C++ cơ bản qua ví dụ thực tế</a></li>		    
+			    <li><a href="#">Lập trình Python ứng dụng thực tế</a></li>		    
+			    <li><a href="#">Java căn bản kết hợp thực hành</a></li>			    
+			</ul>		
+			
+			
+			<button type="button" class="btn btn-primary">Website</button>
+			<button type="button" class="btn btn-primary dropdown-toggle allkhoahoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span class="caret"></span>
+			    <span class="sr-only">Toggle Dropdown</span>
+			</button>			 
+			<ul class="dropdown-menu">
+			    <li><a href="#">Node.js xây dựng website tốc độ cao</a></li>		    
+			    <li><a href="#">Lập trình PHP qua các dự án thực tế</a></li>		    
+				<li><a href="#">Ruby on Rails 5 qua các dự án</a></li>		    
+			</ul>				
+			
+			<button type="button" class="btn btn-primary">Mobile</button>
+			<button type="button" class="btn btn-primary dropdown-toggle allkhoahoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span class="caret"></span>
+			    <span class="sr-only">Toggle Dropdown</span>
+			</button>			 
+			<ul class="dropdown-menu">
+			    <li><a href="#">Lập trình IOS Swift với toàn bộ mã nguồn</a></li>	    
+			</ul>
+		</div>				
+				
+		<br>	
+		<br>	
 
 		<div class="row">
 			<div class="col-xs-6 col-md-3 ">
@@ -155,12 +196,7 @@
 					</a>					
 					<div class="khung"> 		
 			            <h3 class="khoahoc">C++ cơ bản qua ví dụ thực tế</h3>
-			            <h4 class="doanvan gia">600,000đ</h4>
-			            <div class="doanvan">		               
-				            <hr noshade size = 4>     
-				            <p>Khóa học C++ cơ bản qua ví dụ được thiết kế đặc biệt cho những người mới học, chưa biết gì về lập trình.
-				           	</p> 	
-				        </div>   		          	 
+			            <h4 class="doanvan gia">600,000đ</h4>            		        	 
 		           	</div> 
 	           	</div>    	
 	   		</div> 
@@ -172,10 +208,7 @@
 					</a>
 					<div class="khung"> 				
 			            <h3 class="khoahoc">Nhập môn Machine Learning</h3>
-			            <h4 class="doanvan gia">800,000đ</h4>     
-				        <hr noshade size = 4> 
-			       		<p class="doanvan">Học qua dự án nhỏ demo, ngôn ngữ lập trình Python, framework Scikit-Learn, TensorFlow, Mlib trên Spark, Deeplearning4J (For java and Spark integratable).
-		   				</p>    
+			            <h4 class="doanvan gia">800,000đ</h4>    				         
 		   			</div>	
 		   		</div>	 	 	          	
 			</div>
@@ -187,10 +220,7 @@
 					</a>
 					<div class="khung"> 
 						<h3 class="khoahoc">Xây dựng webiste bán hàng với Magento 2</h3>
-			            <h4 class="doanvan gia">800,000đ</h4>	        
-				        <hr noshade size = 4>	        
-				        <p class="doanvan">Magento là một mã nguồn mở tạo web thương mại điện tử nổi tiếng được viết trên ngôn ngữ PHP - Ngôn ngữ lập trình web phổ biến nhất hiện nay tại Việt Nam. 
-			           	</p> 
+			            <h4 class="doanvan gia">800,000đ</h4>			        
 		           </div> 
 		        </div>   	             	          	
 	        </div>
@@ -202,10 +232,7 @@
 					</a>
 					<div class="khung"> 			
 					    <h3 class="khoahoc">Lập trình PHP qua các dự án thực tế</h3>
-			            <h4 class="doanvan gia">700,000đ</h4>	        
-				        <hr noshade size = 4>	        
-				        <p class="doanvan">PHP là mã nguồn mở, nó hoàn toàn miễn phí, hỗ trợ người dùng xây dựng website với chi phí tiết kiệm nhất, nhờ đó mà PHP đã trở nên phổ biến một cách rất nhanh chóng trong những năm qua.  
-				        </p>  
+			            <h4 class="doanvan gia">700,000đ</h4>       
 				    </div>     
 			    </div>              	          	
 	        </div>
@@ -220,10 +247,7 @@
 					</a>					
 					<div class="khung"> 		
 			            <h3 class="khoahoc">Lập trình Python ứng dụng thực tế</h3>
-			            <h4 class="doanvan gia">1,000,000đ</h4>		               
-			            <hr noshade size = 4>     
-			            <p class="doanvan">Python là một ngôn ngữ lập trình scripting phổ biến và hết sức thú vị. Nó không phải ngôn ngữ có tốc độ thực thi nhanh như Assembly, C, C++.
-			           	</p> 		          	 
+			            <h4 class="doanvan gia">1,000,000đ</h4>	           		          	 
 		           	</div> 
 	           	</div>    	
 	   		</div> 
@@ -235,10 +259,7 @@
 					</a>
 					<div class="khung"> 				
 			            <h3 class="khoahoc">Ruby on Rails 5 qua các dự án</h3>
-			            <h4 class="doanvan gia">2,500,000đ</h4>     
-				        <hr noshade size = 4> 
-			       		<p class="doanvan">Lập trình Ruby on Rails thành thạo qua ít nhất 2 dự án Rails thực tế, mô hình MVC, lập trình theo quy ước thay cho cấu hình (convention over configuration).
-		   				</p>    
+			            <h4 class="doanvan gia">2,500,000đ</h4>  			          
 		   			</div>	
 		   		</div>	 	 	          	
 			</div>
@@ -250,10 +271,7 @@
 					</a>
 					<div class="khung"> 
 						<h3 class="khoahoc">Thiết kế RESTful WebServices</h3>
-			            <h4 class="doanvan gia">1,000,000đ</h4>	        
-				        <hr noshade size = 4>	        
-				        <p class="doanvan">Khóa học Thiết kế RESTful WebServices với Nodejs giúp các bạn xây dựng được những webservices đơn giản.
-			           	</p> 
+			            <h4 class="doanvan gia">1,000,000đ</h4>				         
 		           </div> 
 		        </div>   	             	          	
 	        </div>
@@ -265,17 +283,81 @@
 					</a>
 					<div class="khung"> 			
 					    <h3 class="khoahoc">Lập trình IOS Swift với toàn bộ mã nguồn</h3>
-			            <h4 class="doanvan gia">1,800,000đ</h4>	        
-				        <hr noshade size = 4>	        
-				        <p class="doanvan">Học viên có toàn bộ mã nguồn và được hướng dẫn từng bước để thực hiện. Học viên đăng ký học được xem học liệu vĩnh viễn. Khóa học liên tục được cập nhật bài giảng mới, công nghệ mới khi có.  
-				        </p>  
+			            <h4 class="doanvan gia">1,800,000đ</h4>			        
 				    </div>     
 			    </div>              	          	
 	        </div>
-		</div>		
-		<br>
+	    </div>	
+	    <br>
 
-		
+    	<div class="row">
+	        <div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal9">
+						<img src="img/Website-Builders4.jpg" alt="anh9" title="anh9" class="img-responsive"/>
+					</a>
+					<div class="khung"> 
+						<h3 class="khoahoc">Xây dựng website với Arrow Js CMS</h3>
+			            <h4 class="doanvan gia">800,000đ</h4>				         
+		           </div> 
+		        </div>   	             	          	
+	        </div>
+
+	        <div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal10">
+						<img src="img/Electronics2.jpg" alt="anh10" title="anh10" class="img-responsive"/>
+					</a>
+					<div class="khung"> 
+						<h3 class="khoahoc">Điện tử thực hành cho dân điện tử</h3>
+			            <h4 class="doanvan gia">3,600,000đ</h4>				         
+		           </div> 
+		        </div>   	             	          	
+	        </div>
+
+	        <div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal11">
+						<img src="img/nodejs2.jpg" alt="anh11" title="anh11" class="img-responsive"/>
+					</a>
+					<div class="khung"> 
+						<h3 class="khoahoc">Node.js xây dựng website tốc độ cao</h3>
+			            <h4 class="doanvan gia">1,500,000đ</h4>				         
+		           </div> 
+		        </div>   	             	          	
+	        </div>
+
+	        <div class="col-xs-6 col-md-3 ">
+				<div class="maunen">
+					<a href="#" class="thumbnail" data-toggle="modal" data-target="#modal12">
+						<img src="img/JavaThucHanh2.jpg" alt="anh12" title="anh12" class="img-responsive"/>
+					</a>
+					<div class="khung"> 
+						<h3 class="khoahoc">Java căn bản kết hợp thực hành</h3>
+			            <h4 class="doanvan gia">4,000,000đ</h4>				         
+		           </div> 
+		        </div>   	             	          	
+	        </div>
+	    </div>	
+	    <br>		
+
+		<div class="btn-group trang" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default">1</button>
+		  <button type="button" class="btn btn-default">2</button>
+		  <button type="button" class="btn btn-default">3</button>
+		  <div class="btn-group trang" role="group">
+		    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      Tiếp
+		      <span class="caret"></span>
+		    </button>
+		    <ul class="dropdown-menu">		      
+		      <li><a href="#">4</a></li>
+		    </ul>
+		  </div>
+		</div>
+		<br>
+		<br>
+		<br>
 
 	</section>
 
