@@ -1,29 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>ACE in Action</title>
-<style type="text/css" media="screen">
-    #editor { 
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-</style>
-</head>
-<body>
+    <head>
+        <title>Techmaster</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/images.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style01.css">
+        <style type="text/css" media="screen">
+            #editor { 
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        </style>
+    </head>
 
-<div id="editor">function foo(items) {
-    var x = "All this is syntax highlighted";
-    return x;
-}</div>
-    
-<script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
-    editor.getSession().setMode("ace/mode/javascript");
-</script>
-</body>
+    <body>
+
+        <header class="container">
+        <div>
+            <p>
+            </p>
+        </div>   
+            
+            <div class="sign">
+                <div class="signup">
+                    <!-- Button đăng ký -->
+                    <button type="button" class="btn btn-primary btn-lg dk" data-toggle="modal" data-target="#dangky">Đăng ký</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="dangky" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Đăng ký</h4>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Địa chỉ Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Mật khẩu</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              </div>                          
+                              <div class="form-group">
+                                <label for="exampleInputhoten1">Họ và Tên</label>
+                                <input type="Name" class="form-control" id="exampleInputhoten1" placeholder="Name">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputtelefon1">Số điện thoại</label>
+                                <input type="Telephone" class="form-control" id="exampleInputtelefon1" placeholder="Telephone">
+                              </div>
+                              <button type="signup" class="btn btn-default">Đăng ký</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class = "signin">
+                    <!-- Button đăng nhập -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button>
+
+                    <!-- Đăng nhập -->
+                    <div class="modal fade" id="dangnhap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Địa chỉ Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Mật khẩu</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              </div>                          
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Ghi nhớ mật khẩu
+                                </label>
+                                <button style = "float: right;" type="signin" class="btn btn-default">Đăng nhập</button>
+                              </div>                          
+                            </form>
+                          </div>                      
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="header_bg">
+                <div class="container">
+                    <div class="header">
+                        <div class="logo">
+                            <a href="trangchu01.html">
+                                <img src="img/download.jpeg">   
+                            </a>
+                        </div>
+                        <div class="h_menu">
+                                <a id="touch-menu" class = "mobile-menu" href="#">Menu</a>
+                            <nav>
+                                <ul class="menu list-unstyled nav nav-pills">
+                                    <li role="presentation">
+                                        <a href="trangchu01.html" class="img-responsive">Trang chủ</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="khoahoc.html" class="img-responsive">Khóa học</a>
+                                    </li>   
+                                    <li role="presentation">
+                                        <a href="codefree.html" class="img-responsive">Code online</a>
+                                    </li>                                                   
+                                    <li role="presentation">
+                                        <a href="lienhe.html" class="img-responsive">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>  
+                                <script type="js/javascript.js"></script>       
+                        </div>  
+                    </div>  
+                </div>
+            </div>
+        </header>    
+
+        <section class="container">             
+
+            <div class="row">
+                <div class="col-md-4 htmlb">
+                    <div id="html"><h3>HTML</h3>         
+                        <div id="editor_html">
+                        </div>
+                    </div> 
+                </div>    
+
+                <div class="col-md-4 cssb">
+                    <div id="css"><h3>CSS</h3>
+                        <div id="editor_css">
+                        </div>
+                    </div>    
+                </div>  
+                  
+                <div class="col-md-4 javascriptb">
+                    <div id="javascript"><h3>Javascript</h3>
+                        <div id="editor_javascript">
+                        </div>
+                    </div> 
+                </div>       
+            </div>    
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js" type="text/javascript" charset="utf-8"></script>
+
+            <script>
+                var editor_html = ace.edit("editor_html");
+                editor_html.setTheme("ace/theme/monokai");
+                editor_html.getSession().setMode("ace/mode/html");
+            
+                var editor_css = ace.edit("editor_css");
+                editor_css.setTheme("ace/theme/monokai");
+                editor_css.getSession().setMode("ace/mode/css");
+            
+                var editor_javascript = ace.edit("editor_javascript");
+                editor_javascript.setTheme("ace/theme/monokai");
+                editor_javascript.getSession().setMode("ace/mode/javascript");
+            </script>
+
+            <br>
+            <br> 
+            <br> 
+
+            <div class="codecn">
+                <nav class="navbar navbar-default">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#">Setting</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav">
+                            <li><a href="#">Run<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Save</a></li>   
+                            <li><a href="#">Folk</a></li>                  
+                          </ul>          
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                </nav>
+            </div>  
+
+            <div class="ketqua">
+
+            </div>
+            <br>
+
+            <!-- <div class="codecn">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Run</button>
+
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Save</button>
+
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Folk</button>
+             </div>  -->
+            
+        </section>    
+
+    </body>
 </html>

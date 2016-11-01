@@ -173,6 +173,56 @@ ul {
 	margin-left: 5px;
 }
 
+#html {
+	height: 300px;
+	/*width: 30%;*/
+	width: 100%;
+	/*margin: 0 3% 0 3%;*/
+	float: left;	
+}
+
+#css {
+	height: 300px;
+	/*width: 30%;*/
+	width: 100%;
+	/*margin: 0 3% 0 3%;*/
+	float: left;
+}
+
+#javascript {
+	height: 300px;
+	/*width: 30%;*/
+	width: 100%;
+	/*margin: 0 3% 0 3%;*/
+	float: left;
+}
+
+#editor_html {
+	height: 300px;
+	border-style: double;
+    border-width: thick;
+}
+
+#editor_css {
+	height: 300px;
+	border-style: double;
+    border-width: thick;
+}
+
+#editor_javascript {
+	height: 300px;
+	border-style: double;
+    border-width: thick;
+}
+
+.ketqua {
+	border-style: double;
+    border-width: thick;
+    height: 500px;	
+}
+
+
+
 
 
 
