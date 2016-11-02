@@ -29,7 +29,7 @@
             <div class="sign">
                 <div class="signup">
                     <!-- Button đăng ký -->
-                    <button type="button" class="btn btn-primary btn-lg dk" data-toggle="modal" data-target="#dangky">Đăng ký</button>
+                    <button type="submit" class="btn btn-primary btn-lg dk" data-toggle="modal" data-target="#dangky">Đăng ký</button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="dangky" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -71,7 +71,7 @@
 
                 <div class = "signin">
                     <!-- Button đăng nhập -->
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button>
+                    <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button>
 
                     <!-- Đăng nhập -->
                     <div class="modal fade" id="dangnhap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -132,22 +132,55 @@
                                         <a href="codefree.html" class="img-responsive">Code online</a>
                                     </li>                       
                                 </ul>
-                            </nav>  
-                                <script type="js/javascript.js"></script>       
+                            </nav>                                      
                         </div>  
                     </div>  
                 </div>
-            </div>
-            <br>                        
+            </div>                                  
         </header> 
 
         <section class="container">
+            <div class="main_grid">
+                <div class="khoahocc" style="height:90px;">
+                    <h2 style ="text-align: center; color: white;"><div style="padding: 15px;">C++ cơ bản qua các ví dụ<br></div></h2>
 
+                    <h5 class="gioithieuc">Khóa học C/C++ online được thiết kế đặc biệt cho người chưa biết gì về lập trình. Video kiến thức được tổ chức chi tiết, cặn kẽ, dễ hiểu, nhiều ví dụ mẫu và kinh nghiệm lập trình, trao đổi trực tuyến với giảng viên. </h5>            
+                </div>              
+            </div>
 
-        </section>   
+            <br>
 
-        <script>
-            $('#form-register').on('signup', function() {
+            <!-- Button trigger modal -->
+            <div class="hocngay">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><h3>ĐĂNG KÝ GẤP</h3><h5>Chỉ từ <span>600,000đ</span></h5></button>            
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </section>  
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+
+        <!--<script>
+            $('#form-register').on('submit', function() {
                 var isValid = true;
 
                 if ($('#Password').val().trim() == '') {
@@ -181,12 +214,9 @@
                 return isValid;
             });
 
-        </script>  
+        </script>-->  
 
-        <script type="text/javascript" src="js/javascript.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>          
+                
         
 
     </body>

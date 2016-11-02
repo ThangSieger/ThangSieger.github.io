@@ -79,6 +79,10 @@ ul {
   background: #0099CC;  
 }
 
+.khoahocc {
+  background: #0099CC;  
+}
+
 @media screen and (max-width: 2000px) {
   .maunen {
 	background: #0099CC;
@@ -108,7 +112,7 @@ ul {
   .khoahoc {
   	color: black;
   	background: none;
-  }
+  }  
   .gia {
   	color: black;
   }  
@@ -224,6 +228,31 @@ ul {
 .pr {
 	color: transparent;
 }
+
+a:hover { 
+	text-decoration: none; 
+} 
+
+a {
+	text-decoration: none; 
+}
+
+.gioithieuc {
+	text-align: center;
+	background: #0099CC;
+	color: white;
+	padding: 0px 80px 20px 80px;
+	line-height: 20px;
+}
+
+.hocngay {
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+
+
 
 
 
