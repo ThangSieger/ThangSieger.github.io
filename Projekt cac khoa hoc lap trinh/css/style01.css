@@ -25,10 +25,10 @@
 	list-style: none;
 }
 
-ul {
+/*ul {
 	margin-top: 0;
 	margin-bottom: 10px; 
-}
+}*/
 
 .logo {
 	margin-top: 15px;
@@ -121,7 +121,7 @@ ul {
 }
 
 .khung {
-	padding: 5px;
+	padding: 10px;
 	color: white;
 }
 
@@ -135,7 +135,7 @@ ul {
 	padding: 0px;	
 }
 
-ul {
+.lienhe {
 	list-style: none;
 }
 
@@ -144,9 +144,16 @@ ul {
 }
 
 .tho {
+	display: inline-block;
+	width: 49%;
 	background: #0099CC;
 	color: white;
 	text-align: center;	
+	padding: 10px;	
+}
+
+.giandong {
+	line-height: 30px;
 }
 
 .trang {
@@ -259,6 +266,35 @@ a {
 	text-align: center;
 }
 
+.thanhtoan {
+	text-align: left;
+}
+
+.thongtinc {
+	background: #0099CC;		
+}
+
+.baihocc {
+	text-align: center;
+	color: white;	
+}
+
+.solieu {
+	color: #6200EA;
+}
+
+.demokhoahocc {
+	background: #0099CC;
+	color: white;
+	padding: 10px 10px 10px 10px;
+}
+
+
+
+.zoom-effect-container:hover .hieuung {
+	-webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
 
 
 

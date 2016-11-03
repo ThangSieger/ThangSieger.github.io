@@ -132,13 +132,7 @@
         </header> 
 
         <section class="container">
-            <div class="gioithieukhc">
-                <!--<div class="tenkhoahocc" style="height:90px;">
-                    <h2 style ="text-align: center; color: white;"><div style="padding: 15px;">C++ cơ bản qua các ví dụ<br></div></h2>
-
-                    <h5 class="tomtatkhoahocc">Khóa học C/C++ online được thiết kế đặc biệt cho người chưa biết gì về lập trình. Video kiến thức được tổ chức chi tiết, cặn kẽ, dễ hiểu, nhiều ví dụ mẫu và kinh nghiệm lập trình, trao đổi trực tuyến với giảng viên. </h5>            
-                </div>-->   
-
+            <div class="gioithieukhc"> 
                 <br>     
                 <div class="tenkhoahocc">
                     <h2>C++ cơ bản qua các ví dụ</h2>   
@@ -150,33 +144,210 @@
                 <br>               
                 <!-- Button trigger modal -->
                 <div class="hocngay1">
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#hocngay1"><h3>ĐĂNG KÝ NGAY</h3><h5>Chỉ từ <span>600,000đ</span></h5></button>            
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#hocngay1"><h3>ĐĂNG KÝ NGAY</h3><h5>Chỉ từ <span>500,000đ</span></h5></button>            
                 </div>
             </div>
-
                 <!-- Modal -->
                 <div class="modal fade" id="hocngay1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                   <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content" id="chongoi">
+
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">Chọn gói học phù hợp</h4>
                       </div>
                       <div class="modal-body">
-                        <ul class="nav nav-tabs">
-                          <li role="presentation" class="active"><a href="#">Home</a></li>
-                          <li role="presentation"><a href="#">Profile</a></li>              
-                        </ul>  
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
+                        <!-- Nav tabs chọn cách học-->                        
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#tructuyen" aria-controls="tructuyen" role="tab" data-toggle="tab">Trực tuyến - 500,000đ</a></li>
+                          <li role="presentation"><a href="#thuchanhlab" aria-controls="thuchanhlab" role="tab" data-toggle="tab">Thực hành Lab - 2,500,000đ</a></li>
+                        </ul>
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active" id="tructuyen"> 
+                            <br>
+                            Học trực tuyến không thực hành phòng lab. Học viên được xem video, cùng mã nguồn, tài liệu cùng quiz. Phù hợp với những bạn ở xa, học phí thấp. Video liên tục được cập nhật. Học viên được xem khóa học vĩnh viễn
+                            <br>
+                              <ul style="list-style-type:square"> 
+                                <li>Xem video</li>
+                                <li>Tham gia nhóm thảo luận Facebook</li>
+                                <li>Trắc nghiệm</li>
+                                <li>Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer</li>
+                              </ul> 
+                            <br>
+                            <div class="modal-footer">                                                   
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#thanhtoan1">Thanh toán gói 500,000đ</button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="thanhtoan1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header thanhtoan">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      <h4 class="modal-title" id="myModalLabel">Thanh toán gói 500,000đ</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <!-- Nav tabs thanh toán-->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li role="presentation" class="active"><a href="#chuyenkhoan1" aria-controls="chuyenkhoan1" role="tab" data-toggle="tab">Chuyển khoản</a></li>
+                                          <li role="presentation"><a href="#tructiep1" aria-controls="tructiep1" role="tab" data-toggle="tab">Trực tiếp</a></li>                      
+                                        </ul>
+                                        <!-- Tab panes thanh toán -->
+                                        <div class="tab-content thanhtoan">
+                                          <div role="tabpanel" class="tab-pane active" id="chuyenkhoan1">
+                                            <br>
+                                            <p> 
+                                              Các bạn có thể chuyển khoản ngân hàng để đóng học phí. Khi chuyển khoản, lưu ý đóng đúng mức học phí.<br>
+                                              Tên Tài Khoản NH: <b>Công ty TNHH Techmaster Việt Nam</b> <br>
+                                              Số Tài Khoản NH: <b>002 1000 252 385</b>  (TK Đồng Việt Nam)<br>
+                                              Ngân hàng: <b>Vietcombank, Chi nhánh Hà Nội</b><br>
+                                              Nội dung chuyển khoản: Ghi rõ <b>HỌ TÊN</b> và <b>SỐ ĐIỆN THOẠI</b> bạn đã dùng để đăng ký.          
+                                            </p>
+                                            <br>   
+                                          </div>
+                                          <div role="tabpanel" class="tab-pane" id="tructiep1">
+                                            <br>
+                                            Để đóng học phí trực tiếp, bạn vui lòng đến địa chỉ:<br>
+                                            <b>Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt Nam.</b>
+                                            <br>
+                                          </div>        
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Quay lại</button>
+                                      <button type="button" class="btn btn-primary">Xác nhận</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="thuchanhlab">
+                            <br>
+                            <ul style="list-style-type:square">
+                                <li>Thực hành phòng lab đầy đủ thiết bị linh kiện</li>
+                                <li>Giảng viên hướng dẫn trực tiếp</li>
+                                <li>Dự án trực quan</li>
+                                <br>
+                                <br> 
+                                <li>Xem video</li>
+                                <li>Thảo luận trực tiếp trong bài</li>
+                                <li>Được giảng viên chấm bài</li>
+                                <li>Tham gia nhóm thảo luận Facebook</li>
+                                <li>Trắc nghiệm</li>
+                                <li>Hỗ trợ trực tiếp</li>
+                                <li>Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer</li>
+                                <li>Thực tập trực tiếp tại Techmaster</li>
+                                <li>Học tại phòng lab</li>
+                              </ul> 
+                            <br>
+                            <div class="modal-footer">                                                   
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#thanhtoan2">Thanh toán gói 2,500,000đ</button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="thanhtoan2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header thanhtoan">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      <h4 class="modal-title" id="myModalLabel">Thanh toán gói 2,500,000đ</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <!-- Nav tabs thanh toán-->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li role="presentation" class="active"><a href="#chuyenkhoan2" aria-controls="chuyenkhoan" role="tab" data-toggle="tab">Chuyển khoản</a></li>
+                                          <li role="presentation"><a href="#tructiep2" aria-controls="tructiep2" role="tab" data-toggle="tab">Trực tiếp</a></li>                      
+                                        </ul>
+                                        <!-- Tab panes thanh toán -->
+                                        <div class="tab-content thanhtoan">
+                                          <div role="tabpanel" class="tab-pane active" id="chuyenkhoan2">
+                                            <br>
+                                            <p> 
+                                              Các bạn có thể chuyển khoản ngân hàng để đóng học phí. Khi chuyển khoản, lưu ý đóng đúng mức học phí.<br>  
+                                              Tên Tài Khoản NH: <b>Công ty TNHH Techmaster Việt Nam</b> <br>
+                                              Số Tài Khoản NH: <b>002 1000 252 385</b>  (TK Đồng Việt Nam)<br>
+                                              Ngân hàng: <b>Vietcombank, Chi nhánh Hà Nội</b><br>
+                                              Nội dung chuyển khoản: Ghi rõ <b>HỌ TÊN</b> và <b>SỐ ĐIỆN THOẠI</b> bạn đã dùng để đăng ký.          
+                                            </p>
+                                            <br>   
+                                          </div>
+                                          <div role="tabpanel" class="tab-pane" id="tructiep2">
+                                            <br>
+                                            Để đóng học phí trực tiếp, bạn vui lòng đến địa chỉ:<br>
+                                            <b>Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt Nam.</b>
+                                            <br>
+                                          </div>        
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Quay lại</button>
+                                      <button type="button" class="btn btn-primary">Xác nhận</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                        </div> 
+                      </div>                        
                     </div>
                   </div>
                 </div>
-              
-          <br>        
+                <br> 
+          <div class="thongtinc">     
+            <div class="row ">
+              <div class="col-md-4 baihocc ">
+                <h1 class="solieu">77</h1>
+                <h3>Bài học</h3>
+                Luôn luôn phát triển, luôn cập nhật những công nghệ mới nhất.<br><br>
+              </div>
+              <div class="col-md-4 baihocc ">
+                <h1 class="solieu">66</h1>
+                <h3>Videos</h3>
+                Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho bạn trong quá trình lập trình.<br><br>
+              </div> 
+              <div class="col-md-4 baihocc ">   
+                <h1 class="solieu">207</h1>
+                <h3>Quizzes</h3>
+                Câu hỏi trắc nghiệm giúp bạn ôn lại kiến thức vừa học.<br><br>           
+              </div>
+            </div>        
+          </div>  
+          <br>  
+
+          
+          <div class="row">            
+            <div class="col-md-8">
+                <div class="demokhoahocc">  
+                  <h3>Giới thiệu</h3>
+                  <hr noshade size = 4> 
+                  <p>
+                    Khóa học C++ cơ bản qua ví dụ được thiết kế đặc biệt cho những người mới học, chưa biết gì về lập trình.<br>
+                    <ul>
+                      <li>Khóa học hướng tới rèn luyện tư duy từ đầu cho những người chưa biết gì về lập trình.</li>
+                      <li>Các video lý thuyết được giảng dạy chi tiết, cặn kẽ, dễ hiểu, có hệ thống với nhiều ví dụ minh họa sinh động.</li>
+                      <li>Sau mỗi video lý thuyết có tối thiểu 3 câu hỏi trắc nghiệm giúp học viên nắm vững kiến thức và gợi mở tư duy.</li>
+                      <li>Có nhiều bài tập để rèn luyện kiến thức đã học.</li>
+                      <li>Học viên làm bài tập sau đó thảo luận trực tuyến với giảng viên qua Skype và TeamViewer.</li>
+                      <li>Học viên thảo luận với các học viên trong lớp thông qua group Facebook, Skype và phần thảo luận dưới mỗi video.</li>
+                      <li>Xem điểm và tiến độ học của mình và các bạn trong lớp.</li>
+                    </ul>
+                  </p>  
+                  <br>  
+                  <h3>Giảng viên</h3> 
+                  <hr noshade size = 4>
+                  <p>
+                    <h4>Barack Obama</h4>
+                    Mình bắt đầu lập trình Pascal từ năm 1993, với chiếc máy PC 2Mb RAM, 40Mb ổ cứng. Đến nay, đã hoàn thành gần 60 dự án phần mềm lớn nhỏ. Mình dạy lớp iOS, Node.js tại Techmaster. Ngoài ra mình còn làm cố vấn công nghệ cho các nhóm khởi nghiệp, kiêm quản lý dự án tại Techmaster. Mình bơi mỗi ngày 2000 mét <i style="color: black">(có mặc quần bơi)</i>.<br>
+                  </p>
+                  <br>
+                  <h3>Giáo trình</h3>
+                  <hr noshade size = 4>  
+
+                  
+                </div>
+            </div>
+          </div>     
+                
         </section>  
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
