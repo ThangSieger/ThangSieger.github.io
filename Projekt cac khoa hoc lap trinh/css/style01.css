@@ -79,10 +79,6 @@ ul {
   background: #0099CC;  
 }
 
-.khoahocc {
-  background: #0099CC;  
-}
-
 @media screen and (max-width: 2000px) {
   .maunen {
 	background: #0099CC;
@@ -237,18 +233,34 @@ a {
 	text-decoration: none; 
 }
 
-.gioithieuc {
-	text-align: center;
+.gioithieukhc {
 	background: #0099CC;
-	color: white;
-	padding: 0px 80px 20px 80px;
-	line-height: 20px;
+	height: 350px;
 }
 
-.hocngay {
+.tenkhoahocc {
+	color: white;
+	text-align: center;
+}
+
+.tomtatkhoahocc {
+	color: white;
+	text-align: center;
+	
+	padding: 0px 100px 0px 100px;	
+}
+
+.tomtatkhoahocc1 {
+	line-height: 25px;
+}
+
+.hocngay1 {
 	margin-top: 15px;
 	text-align: center;
 }
+
+
+
 
 
 
