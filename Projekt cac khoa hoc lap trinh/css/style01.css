@@ -1,5 +1,5 @@
 .header_bg {
-	background: #0099CC;
+	background: #28a1b1;
 }
 
 #banner {
@@ -76,12 +76,12 @@
 }
 
 .khoahoc {
-  background: #0099CC;  
+  background: #28a1b1;  
 }
 
 @media screen and (max-width: 2000px) {
   .maunen {
-	background: #0099CC;
+	background: #28a1b1;
 	margin: auto;
 	height: 500px;
   }	
@@ -90,7 +90,7 @@
   	font-size: 15px;
   }  
   .maunenk {
-	background: #0099CC;
+	background: #28a1b1;
 	margin: auto;
 	height: 320px;
   }	
@@ -122,7 +122,7 @@
 
 .khung {
 	padding: 10px;
-	color: #330000;
+	color: white;
 }
 
 .gia {
@@ -130,8 +130,8 @@
 }
 
 .maunenchan {
-	background: #0099CC;
-	color: #330000;	
+	background: #28a1b1;
+	color: white;	
 	padding: 0px;	
 }
 
@@ -146,8 +146,8 @@
 .tho {
 	display: inline-block;
 	width: 49%;
-	background: #0099CC;
-	color: #330000;
+	background: #28a1b1;
+	color: white;
 	text-align: center;	
 	padding: 10px;	
 }
@@ -169,7 +169,7 @@
 }
 
 .maunenkh {
-	background: #0099CC;
+	background: #28a1b1;
 }
 
 .logo {
@@ -188,29 +188,29 @@
 	float: left;	
 }
 
-#css {
+/*#css {
 	height: 300px;
-	/*width: 30%;*/
+	width: 30%;
 	width: 100%;
-	/*margin: 0 3% 0 3%;*/
+	margin: 0 3% 0 3%;
 	float: left;
 }
 
 #javascript {
 	height: 300px;
-	/*width: 30%;*/
+	width: 30%;
 	width: 100%;
-	/*margin: 0 3% 0 3%;*/
+	margin: 0 3% 0 3%;
 	float: left;
-}
+}*/
 
 #editor_html {
-	height: 300px;
+	height: 700px;
 	border-style: double;
     border-width: thick;
 }
 
-#editor_css {
+/*#editor_css {
 	height: 300px;
 	border-style: double;
     border-width: thick;
@@ -220,12 +220,16 @@
 	height: 300px;
 	border-style: double;
     border-width: thick;
+}*/
+.kc {
+	height: 1000px;
 }
 
 .ketqua {
 	border-style: double;
     border-width: thick;
-    height: 500px;	
+    height: 500px;
+    margin-top: 800px;	
 }
 
 .pr {
@@ -241,17 +245,17 @@ a {
 }
 
 .gioithieukhc {
-	background: #0099CC;
+	background: #28a1b1;
 	height: 350px;
 }
 
 .tenkhoahocc {
-	color: #330000;
+	color: white;
 	text-align: center;
 }
 
 .tomtatkhoahocc {
-	color: #330000;
+	color: white;
 	text-align: center;
 	
 	padding: 0px 100px 0px 100px;	
@@ -271,12 +275,12 @@ a {
 }
 
 .thongtinc {
-	background: #0099CC;		
+	background: #28a1b1;		
 }
 
 .baihocc {
 	text-align: center;
-	color: #330000;	
+	color: white;	
 }
 
 .solieu {
@@ -284,24 +288,37 @@ a {
 }
 
 .demokhoahocc {
-	background: #0099CC;
-	color: #330000;
+	background: #28a1b1;
+	color: white;
 	padding: 10px 10px 10px 10px;
 }
 
 .demogiaotrinhc {
-	background: #0099CC;
+	background: #28a1b1;
 	padding: 10px 10px 10px 10px;
 }
 
 .tieudegiaotrinh {
-	color: #330000;
+	color: white;
 }
 
 .hieuung.zoom-effect-container:hover {
 	-webkit-transform: scale(1.08);
   transform: scale(1.08);
 }
+
+.vs {
+	display: inline-block;
+	width: 30%;		
+	padding: 10px;	
+}
+
+.anhtmt {
+	padding-top: 20px;
+}
+
+
+
 
 
 
