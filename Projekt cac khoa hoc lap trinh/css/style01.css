@@ -6,6 +6,11 @@
  width: 100%;
 }
 
+/*ul {
+	margin-top: 0;
+	margin-bottom: 10px;
+}*/
+
 .mobile-menu {
 	display: none;
 	width: 100%;
@@ -16,29 +21,13 @@
 	font-size: 16px;
 }
 
-.menu {
-	display: block;
-}
-
 .list-unstyled {
 	padding-left: 0;
 	list-style: none;
 }
 
-/*ul {
-	margin-top: 0;
-	margin-bottom: 10px; 
-}*/
-
-.logo {
-	margin-top: 15px;
-	float: left;
-}
-
-.menu li {
-	display: inline-block;
-	position: relative;
-	z-index: 100;
+.menu {
+	display: block;
 }
 
 .menu li a {
@@ -48,6 +37,17 @@
 	padding: 10px 24px;
 	display: block;
 	color: #ffffff;
+}
+
+.menu li {
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+}
+
+.logo {
+	margin-top: 15px;
+	float: left;
 }
 
 .h_menu {
@@ -122,7 +122,7 @@
 
 .khung {
 	padding: 10px;
-	color: white;
+	color: #330000;
 }
 
 .gia {
@@ -131,7 +131,7 @@
 
 .maunenchan {
 	background: #0099CC;
-	color: white;	
+	color: #330000;	
 	padding: 0px;	
 }
 
@@ -147,7 +147,7 @@
 	display: inline-block;
 	width: 49%;
 	background: #0099CC;
-	color: white;
+	color: #330000;
 	text-align: center;	
 	padding: 10px;	
 }
@@ -246,12 +246,12 @@ a {
 }
 
 .tenkhoahocc {
-	color: white;
+	color: #330000;
 	text-align: center;
 }
 
 .tomtatkhoahocc {
-	color: white;
+	color: #330000;
 	text-align: center;
 	
 	padding: 0px 100px 0px 100px;	
@@ -276,7 +276,7 @@ a {
 
 .baihocc {
 	text-align: center;
-	color: white;	
+	color: #330000;	
 }
 
 .solieu {
@@ -285,13 +285,20 @@ a {
 
 .demokhoahocc {
 	background: #0099CC;
-	color: white;
+	color: #330000;
 	padding: 10px 10px 10px 10px;
 }
 
+.demogiaotrinhc {
+	background: #0099CC;
+	padding: 10px 10px 10px 10px;
+}
 
+.tieudegiaotrinh {
+	color: #330000;
+}
 
-.zoom-effect-container:hover .hieuung {
+.hieuung.zoom-effect-container:hover {
 	-webkit-transform: scale(1.08);
   transform: scale(1.08);
 }

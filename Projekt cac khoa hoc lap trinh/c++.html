@@ -316,43 +316,396 @@
 
           
           <div class="row">            
-            <div class="col-md-8">
-                <div class="demokhoahocc">  
-                  <h3>Giới thiệu</h3>
-                  <hr noshade size = 4> 
-                  <p>
-                    Khóa học C++ cơ bản qua ví dụ được thiết kế đặc biệt cho những người mới học, chưa biết gì về lập trình.<br>
-                    <ul>
-                      <li>Khóa học hướng tới rèn luyện tư duy từ đầu cho những người chưa biết gì về lập trình.</li>
-                      <li>Các video lý thuyết được giảng dạy chi tiết, cặn kẽ, dễ hiểu, có hệ thống với nhiều ví dụ minh họa sinh động.</li>
-                      <li>Sau mỗi video lý thuyết có tối thiểu 3 câu hỏi trắc nghiệm giúp học viên nắm vững kiến thức và gợi mở tư duy.</li>
-                      <li>Có nhiều bài tập để rèn luyện kiến thức đã học.</li>
-                      <li>Học viên làm bài tập sau đó thảo luận trực tuyến với giảng viên qua Skype và TeamViewer.</li>
-                      <li>Học viên thảo luận với các học viên trong lớp thông qua group Facebook, Skype và phần thảo luận dưới mỗi video.</li>
-                      <li>Xem điểm và tiến độ học của mình và các bạn trong lớp.</li>
-                    </ul>
-                  </p>  
-                  <br>  
-                  <h3>Giảng viên</h3> 
-                  <hr noshade size = 4>
-                  <p>
-                    <h4>Barack Obama</h4>
-                    Mình bắt đầu lập trình Pascal từ năm 1993, với chiếc máy PC 2Mb RAM, 40Mb ổ cứng. Đến nay, đã hoàn thành gần 60 dự án phần mềm lớn nhỏ. Mình dạy lớp iOS, Node.js tại Techmaster. Ngoài ra mình còn làm cố vấn công nghệ cho các nhóm khởi nghiệp, kiêm quản lý dự án tại Techmaster. Mình bơi mỗi ngày 2000 mét <i style="color: black">(có mặc quần bơi)</i>.<br>
-                  </p>
-                  <br>
-                  <h3>Giáo trình</h3>
-                  <hr noshade size = 4>  
-
-                  
-                </div>
+            <div class="col-md-6">
+              <div class="demokhoahocc">  
+                <h3>Giới thiệu</h3>
+                <hr noshade size = 4> 
+                <p>
+                  Khóa học C++ cơ bản qua ví dụ được thiết kế đặc biệt cho những người mới học, chưa biết gì về lập trình.<br>
+                  <ul>
+                    <li>Khóa học hướng tới rèn luyện tư duy từ đầu cho những người chưa biết gì về lập trình.</li>
+                    <li>Các video lý thuyết được giảng dạy chi tiết, cặn kẽ, dễ hiểu, có hệ thống với nhiều ví dụ minh họa sinh động.</li>
+                    <li>Sau mỗi video lý thuyết có tối thiểu 3 câu hỏi trắc nghiệm giúp học viên nắm vững kiến thức và gợi mở tư duy.</li>
+                    <li>Có nhiều bài tập để rèn luyện kiến thức đã học.</li>
+                    <li>Học viên làm bài tập sau đó thảo luận trực tuyến với giảng viên qua Skype và TeamViewer.</li>
+                    <li>Học viên thảo luận với các học viên trong lớp thông qua group Facebook, Skype và phần thảo luận dưới mỗi video.</li>
+                    <li>Xem điểm và tiến độ học của mình và các bạn trong lớp.</li>
+                  </ul>
+                </p>  
+                <br>  
+                <h3>Giảng viên</h3> 
+                <hr noshade size = 4>
+                <p>
+                  <h4>Barack Obama</h4>
+                  Mình bắt đầu lập trình Pascal từ năm 1993, với chiếc máy PC 2Mb RAM, 40Mb ổ cứng. Đến nay, đã hoàn thành gần 60 dự án phần mềm lớn nhỏ. Mình dạy lớp iOS, Node.js tại Techmaster. Ngoài ra mình còn làm cố vấn công nghệ cho các nhóm khởi nghiệp, kiêm quản lý dự án tại Techmaster. Mình bơi mỗi ngày 2000 mét <i style="color: white;">(có mặc quần bơi)</i>.<br>
+                </p>
+                <br> 
+                <h3>Điều kiện đăng ký học</h3> 
+                <hr noshade size = 4>
+                <p>
+                  <ul>
+                    <li>Có máy tính nối mạng Internet</li>
+                    <li>Máy tính nếu là Windows thì cài Visual Studio 2015 Community, nếu là Mac cài XCode 6.3 hoặc CodeLite, Linux cài CodeLite</li>
+                  </ul>  
+                </p>                
+              </div>
             </div>
+
+            <div class="col-md-6">
+              <div class="demogiaotrinhc"> 
+                <h3 class="tieudegiaotrinh">Giáo trình</h3>
+                <hr noshade size = 4>
+                <div>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1. Thông tin chung về C++ (2 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <ul>
+                            <li>C++ ngôn ngữ khó học nhưng mạnh</li>
+                            <li> Lịch sử ngôn ngữ C++</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. Cài đặt môi trường, IDE (5 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Windows: Visual Studio</li>
+                            <li>Hướng dẫn cài đặt CLion trên Windows</li>
+                            <li>CLion - XCode, công cụ soạn thảo C++</li>
+                            <li>Gnu C++ compiler biên dịch mã nguồn</li>
+                            <li>Debug gỡ rối XCode CLion</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. C++ cơ bản (6 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Cấu trúc một chương trình C++ qua VD in ra màn hình</li>
+                            <li>Comments - Chú thích code</li>
+                            <li>Cơ bản về biến</li>
+                            <li>Vào ra cơ bản với cout, cin, endl</li>
+                            <li>Câu lệnh, khối lệnh, khoảng trắng và format code</li>
+                            <li>Error và kỹ thuật gỡ rối (debug) chương trình C++</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4. Quản lý mã nguồn bằng bitbucket và Source tree (1 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Giới thiệu và hướng dẫn sử dụng bitbucket và sourcetree</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFivecollapseSix" aria-expanded="false" aria-controls="collapseFivecollapseSix">
+                            5. Biến và hằng số - Các kiểu dữ liệu cơ bản (11 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFivecollapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Khai báo và khởi tạo biến</li>
+                            <li>Nguyên tắc đặt tên biến, từ khóa trong C++</li>
+                            <li>Phạm vi sử dụng của biến</li>
+                            <li>Kiểu dữ liệu cơ bản, kích thước biến, sizeof</li>
+                            <li>Kiểu số nguyên integer</li>
+                            <li>Kiểu số thực - floating point</li>
+                            <li>Kiểu boolean</li>
+                            <li>Kiểu kí tự - Character</li>
+                            <li>Số (Literals) và hằng số (constant)</li>
+                            <li>Ép kiểu dữ liệu</li>
+                            <li>BT : Chương trình làm tròn số nguyên dương</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSixheadingSeven">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            6. Toán tử - Operators (9 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixheadingSeven">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Toán tử gán</li>
+                            <li>BT : Đổi giá trị hai biến</li>
+                            <li>Toán tử số học và các toán tử tổ hợp</li>
+                            <li>Toán tử so sánh</li>
+                            <li>BT : Giải phương trình bậc nhất và bậc hai</li>
+                            <li>BT : Chương trình rút tiền tại máy ATM</li>
+                            <li>Toán tử logic</li>
+                            <li>Toán tử tăng giảm (++ và --)</li>
+                            <li>Thứ tự ưu tiên các toán tử</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSevencollapseEight" aria-expanded="false" aria-controls="collapseSevencollapseEight">
+                            7. Cấu trúc điều khiển (11 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseSevencollapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Cấu trúc điều khiển và câu lệnh if else</li>
+                            <li>BT : Luyện tập câu lệnh rẽ nhánh if else</li>
+                            <li>Câu lệnh switch case</li>
+                            <li>BT : Luyện tập câu lệnh switch case</li>
+                            <li>Vòng lặp và câu lệnh while</li>
+                            <li>Vòng lặp do while</li>
+                            <li>BT : Vòng lặp while và do while</li>
+                            <li>Vòng lặp for</li>
+                            <li>BT : Vòng lặp for</li>
+                            <li>break và continue</li>
+                            <li>Bài tập tổng hợp và nâng cao chương cấu trúc điều khiển</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingEight">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            8. Con trỏ - Pointer và mảng - Array (8 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Con trỏ là gì ? Toán tử giá trị và địa chỉ</li>
+                            <li>Mảng là gì ? Khai báo và khởi tạo mảng</li>
+                            <li>Truy xuất các phần tử trong mảng</li>
+                            <li>Con trỏ mảng - cấp phát mảng động</li>
+                            <li>Tạo mảng động 2 chiều</li>
+                            <li>cppcheck để kiểm tra lỗi trong code</li>
+                            <li>sizeof struct, pointer, array</li>
+                            <li>Mảng chứa đối tượng, khai báo class</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingNine">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNinecollapseTen" aria-expanded="false" aria-controls="collapseNinecollapseTen">
+                            9. Hàm - Function (7 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseNinecollapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Khai báo hàm, định nghĩa hàm và gọi hàm</li>
+                            <li>Truyền tham số vào hàm</li>
+                            <li>by Reference parameter và const pointer</li>
+                            <li>By Value vs By Reference. Truyền C Array và vector vào hàm</li>
+                            <li>Chồng hàm (function overloading) và hàm mẫu (function templating)</li>
+                            <li>Con trỏ hàm - Function Pointer</li>
+                            <li>Đệ quy - Recursive</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTen">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            10. Chuỗi - String (4 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Mảng ký tự, chuỗi trong C++</li>
+                            <li>Các kí tự đặc biệt trong chuỗi</li>
+                            <li>Thao tác và xử lý chuỗi</li>
+                            <li>C++ string class</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingEleven">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            11. Structures, Unions and Enumerations (3 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Structures</li>
+                            <li>Unions</li>
+                            <li>Enumerations</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwelve">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            12. Lập trình giao diện, đa phương tiện OpenFramework (3 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Giới thiệu về OpenFramework</li>
+                            <li>Vẽ chữ, hiện ảnh, chơi đoạn âm thanh căn bản</li>
+                            <li>Chữ nhật va đập 2 cạnh</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThirteen">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                            13. Class - Hướng đối tượng (2 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Tự xây dụng Class DateTime</li>
+                            <li>Class khác gì với Struct</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFourteen">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                            14. Class Complex Number xây dựng từ đầu (3 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Giới thiệu class Complex Number</li>
+                            <li>Constructor và chồng toán tử cout</li>
+                            <li>Chồng toàn tử - Overloading operator</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFifteen">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                            15. Thư viện BOOST (1 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Boost DateTime</li>                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSixteen">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                            16. SFML lập trình đồ họa (1 bài)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Cài đặt SFML trên Mac</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>   
+            </div>          
           </div>     
                 
-        </section>  
+        </section> 
+        <br> 
 
+
+       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+    </body>      
 
         <!--<script>
             $('#form-register').on('submit', function() {
