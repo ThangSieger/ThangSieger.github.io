@@ -210,30 +210,10 @@
     border-width: thick;
 }
 
-/*#editor_css {
-	height: 300px;
-	border-style: double;
-    border-width: thick;
-}
-
-#editor_javascript {
-	height: 300px;
-	border-style: double;
-    border-width: thick;
-}*/
-.kc {
-	height: 1000px;
-}
-
 .ketqua {
 	border-style: double;
     border-width: thick;
-    height: 500px;
-    margin-top: 800px;	
-}
-
-.pr {
-	color: transparent;
+    height: 700px;    	
 }
 
 a:hover { 
@@ -284,7 +264,7 @@ a {
 }
 
 .solieu {
-	color: #6200EA;
+	color: #7A0EF5;
 }
 
 .demokhoahocc {

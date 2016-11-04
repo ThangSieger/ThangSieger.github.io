@@ -57,7 +57,11 @@
                                 <label for="Telephone">Số điện thoại</label>
                                 <input type="Telephone" class="form-control" id="Telephone" placeholder="Telephone">
                               </div>
-                              <button type="signup" class="btn btn-default">Đăng ký</button>
+                              <div>
+                                <div class="modal-footer">                  
+                                  <button type="button" class="btn btn-primary">Đăng ký</button>
+                                </div>
+                              </div>
                             </form>
                           </div>
                         </div>
@@ -96,7 +100,11 @@
                               <br>
                               <br>
                               <div >                           
-                                <button type="signin" class="btn btn-default">Đăng nhập</button>
+                                <div>
+                                  <div class="modal-footer">                  
+                                    <button type="button" class="btn btn-primary">Đăng nhập</button>
+                                  </div>
+                                </div>
                               </div>                          
                             </form>
                           </div>                      
@@ -139,67 +147,62 @@
             <br>                        
         </header> 
 
-        <section class="container">             
+        <section class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li><a href="#"><b>HTML</b></a></li>
+                      <li><a href="#"><b>CSS</b></a></li>
+                      <li><a href="#"><b>Javascript</b></a></li>                  
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+            </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="html">
-                        <div style="texy-align: center;">
-                            <nav aria-label="Page navigation">
-                              <ul class="pagination">
-                                <li>
-                                  <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                  </a>
-                                </li>
-                                <li><a href="#">HTML</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">Javascript</a></li>                            
-                                <li>
-                                  <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </nav>
-                        </div>    
-                        <!-- <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Ngôn ngữ
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">CSS</a></li>
-                            <li><a href="#">Javascript</a></li>                            
-                          </ul>                                                  
-                        </div>  -->
-                                                     
-                        <div id="editor_html">
-                        </div>                        
-                    </div> 
-                    <br>                                       
-                    <div class="ketqua">
-
-                    </div>
-                    <br>
+            <div class="col-md-6">
+              <div>
+                <br>
+                <div style="float: right;">
+                  <div class="btn-group" role="group" aria-label="Funktion">
+                    <ul class="nav nav-pills">
+                      <li role="presentation" class="active"><a href="#"><b>Run</b></a></li>
+                      <li role="presentation"><a href="#"><b>Save</b></a></li>
+                      <li role="presentation"><a href="#"><b>Folk</b></a></li>
+                      <img src="img/settings1.jpg">              
+                    </ul>                           
+                  </div>                     
                 </div> 
+              </div>  
+            </div>
+          </div>
+        </section> 
 
+        <footer class="container">             
+          <div class="row">
+            <div class="col-md-6">
+                <div id="html">        
+                  <div id="editor_html">
+                  </div>                        
+                </div>                     
+            </div>
 
-                <!-- <div class="col-md-4 cssb">
-                    <div id="css"><h3>CSS</h3>
-                        <div id="editor_css">
-                        </div>
-                    </div>    
-                </div>  
-                  
-                <div class="col-md-4 javascriptb">
-                    <div id="javascript"><h3>Javascript</h3>
-                        <div id="editor_javascript">
-                        </div>
-                    </div> 
+            <div class="col-md-6">                                          
+                <div class="ketqua">
                 </div>       
-            </div>  -->   
+            </div> 
+          </div>              
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js" type="text/javascript" charset="utf-8">
             </script>
@@ -207,67 +210,14 @@
             <script>
                 var editor_html = ace.edit("editor_html");
                 editor_html.setTheme("ace/theme/monokai");
-                editor_html.getSession().setMode("ace/mode/html");
-            
-                // var editor_css = ace.edit("editor_css");
-                // editor_css.setTheme("ace/theme/monokai");
-                // editor_css.getSession().setMode("ace/mode/css");
-            
-                // var editor_javascript = ace.edit("editor_javascript");
-                // editor_javascript.setTheme("ace/theme/monokai");
-                // editor_javascript.getSession().setMode("ace/mode/javascript");
-            </script>
+                editor_html.getSession().setMode("ace/mode/html");                   
+            </script>           
+        </footer> 
 
-           
-
-            
-<!-- 
-            <div class="codecn">
-                <nav class="navbar navbar-inverse">
-                      <div class="container-fluid">
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                          <a class="navbar-brand" href="#">Setting</a>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                          <ul class="nav navbar-nav">
-                            <li><a href="#" class=active>Run<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Save</a></li>   
-                            <li><a href="#">Folk</a></li>                  
-                          </ul>          
-                        </div>
-                      </div>
-                </nav>
-            </div>   -->
-
-            
-            <div class="kc"></div>
-
-            <!-- <div class="codecn">
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Run</button>
-
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Save</button>
-
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Folk</button>
-             </div>  -->
-            <div class="row">
-                <div class="col-md-12">
-                    
-                </div>    
-            </div> 
-            
-        </section> 
 
         <script type="text/javascript" src="javascript.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
     </body>
 </html>
