@@ -255,7 +255,8 @@ a {
 }
 
 .thongtinc {
-	background: #28a1b1;		
+	background: #28a1b1;
+	padding: 10px;		
 }
 
 .baihocc {
@@ -297,7 +298,25 @@ a {
 	padding-top: 20px;
 }
 
+.panel-heading {
+	text-align: center;
+}
 
+.XP {
+	text-align: center;
+}
+
+.TT {
+	text-align: center;
+}
+
+.diemso {
+	text-align: center;
+}
+
+.tieudebang {
+	height: 50px;
+}
 
 
 
