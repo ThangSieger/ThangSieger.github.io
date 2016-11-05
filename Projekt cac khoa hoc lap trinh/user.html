@@ -135,107 +135,198 @@
 			</div>
 		</div>
 		<br>
-		<div id="banner">
+		<div style="text-align:center;">		
+			<div class="tho">				
+				<p><h4 class="giandong">
+					Đi học ở Techmaster<br>
+					Chỉ sau sáu tháng chẳng nhờ vả ai<br>
+					Có công việc làm dài dài<br>
+					Cùng nhau học nhé chớ hoài thời gian<br>				
+				</h4></p>		
+			</div>	
+		</div>
+		<!-- <div id="banner">
         	<img src="img/banner_1.jpg" alt="banner" title="banner" class="img-responsive"/>  
-      	</div> 
+      	</div>  -->
       	<br>				     	
     </header>
 
-    <section class="container">
-    	<div class="row">
-    		<div class="col-md-4">
-    			<ul class="nav nav-pills nav-stacked">
-				  <li role="presentation"><a href="#">Khóa học của tôi</a></li>
-				  <li role="presentation"><a href="#">Thông báo</a></li>
-				  <li role="presentation" class="active"><a href="#">Hồ sơ cá nhân</a></li>
-				  <li role="presentation"><a href="#">Lịch sử giao dịch</a></li>
-				</ul>
+    <section class="container"> 
+    	<div>		
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+			  Hồ sơ cá nhân
+			</button>
 
-    		</div>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+			  Khóa học của tôi
+			</button>
 
-    		<div class="col-md-8">
-    			<form class="form-horizontal">    				
-	    			<div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">Ảnh đại diện</label>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+			  Thông báo
+			</button>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+			  Lịch sử giao dịch
+			</button>
+		</div>
+
+		<div class="collapse" id="collapseExample1">
+		  <div class="well">
+		  <br>
+	    	<div id="hosocanhan">
+	    		<div class="col-md-8">
+	    			<form class="form-horizontal">    				
+		    			<div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">Ảnh đại diện</label>
+						    <div class="col-sm-10">
+							    <div class="row">
+							    	<div class="col-md-1">	
+							      		<img style="margin-right: 20px;"src="img/images.jpeg">
+							      	</div>	
+							      	<div class="col-md-11">
+							      		<div style="margin-left: 40px;">
+									      <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+											  Tải ảnh
+										  </button>
+										  <br>									  									  
+										  <div style="margin-top: 10px;">
+										  	Bạn có thể tải ảnh lên hoặc lấy ảnh trong thư viện của chúng tôi ... <b>nhưng xấu thì bạn phải tự chịu</b>.
+										  </div>
+										</div>  
+									</div>  	
+							    </div>
+							</div>   
+					  	</div>
+
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Họ và Tên</label>
+					    <div class="col-sm-10 xuongty">
+					    	<b><i>Trình Mạnh Cương</i></b>	
+					      <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Name"> -->
+					    </div>
+					  </div>	
+
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+					    <div class="col-sm-10 xuongty">
+					    	<i>manhcuong_nhieunguoithuong@yahoo.com</i>
+					      <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> -->
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Mật khẩu</label>
+					    <div class="col-sm-10 xuongty1">
+					    	*****************
+					      <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password"> -->
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Số điện thoại</label>
 					    <div class="col-sm-10">
-						    <div class="row">
-						    	<div class="col-md-1">	
-						      		<img style="margin-right: 20px;"src="img/images.jpeg">
-						      	</div>	
-						      	<div class="col-md-11">
-						      		<div style="margin-left: 20px;">
-								      <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
-										  Tải ảnh
-									  </button>
-									  <br>									  									  
-									  <div style="margin-top: 10px;">
-									  	Bạn có thể tải ảnh lên hoặc lấy ảnh trong thư viện nhưng xấu thì bạn phải chịu.
-									  </div>
-									</div>  
-								</div>  	
-						    </div>
-						</div>   
-				  	</div>
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Telephone">
+					    </div>
+					  </div>
 
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Họ và Tên</label>
-				    <div class="col-sm-10">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Name">
-				    </div>
-				  </div>	
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Địa chỉ</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Adress">
+					    </div>
+					  </div>
 
-				  <div class="form-group">
-				    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-				    <div class="col-sm-10">
-				      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-				    </div>
-				  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Ngân hàng</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Bank">
+					    </div>
+					  </div>
 
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Mật khẩu</label>
-				    <div class="col-sm-10">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-				    </div>
-				  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Tài khoản</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Accout">
+					    </div>
+					  </div>
 
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Số điện thoại</label>
-				    <div class="col-sm-10">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Telephone">
-				    </div>
-				  </div>
+					  <div style="float: right;">				  	
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Edit</button>					
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Save</button>
+					  </div>				  
+					</form>
+					<br>
+			    	<br>
+			    	<br>		
+	    		</div>
+	    	</div>
+		  </div>
+		</div>
 
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Địa chỉ</label>
-				    <div class="col-sm-10">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Adress">
-				    </div>
-				  </div>
 
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Ngân hàng</label>
-				    <div class="col-sm-10">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Bank">
-				    </div>
-				  </div>
 
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Tài khoản</label>
-				    <div class="col-sm-10">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Accout">
-				    </div>
-				  </div>
+		<div class="collapse" id="collapseExample2">
+		  <div class="well">		  
+		  	<div style="text-align: center;">
+		  		<h1 style="color:#f50ea0;">Bạn đã quay trở lại rồi đấy à? Bạn thật là chăm chỉ <img src="img/chaomung2.jpeg"></h1>
+		  	</div>
+		  	<br>
+		  	<br>
 
-				  <div style="float: right;">				  	
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Edit</button>					
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Save</button>
-				  </div>				  
-				</form>			
-    		</div>
-    	</div>
-    	<br>
-    	<br>
-    	<br>
+		  	<div class="col-xs-6 col-md-3 hieuung zoom-effect-container">
+				<a href="c++.html">
+					<div class="maunenk">						
+						<img src="img/CPP.jpg" alt="anh1" title="anh1" width="360" height="250" class="img-responsive"/>									
+						<div class="khung"> 		
+				            <h3 class="khoahoc">C++ cơ bản qua ví dụ thực tế</h3>                      		        	 
+			           	</div> 
+		           	</div> 
+				</a>
+	   		</div> 
+
+	   		<div class="col-xs-6 col-md-3 hieuung zoom-effect-container">
+				<a href="python.html">
+					<div class="maunenk">						
+						<img src="img/python_course.jpg" alt="anh5" title="anh5" width="360" height="250" class="img-responsive"/>						
+						<div class="khung"> 		
+				            <h3 class="khoahoc">Lập trình Python ứng dụng thực tế</h3>                 		          	 
+			           	</div> 
+		           	</div> 
+				</a>
+	   		</div> 
+
+	   		<div class="col-xs-6 col-md-3 hieuung zoom-effect-container">
+				<a href="rail5.html">
+					<div class="maunenk">						
+						<img src="img/Rails5Logo.jpg" alt="anh6" title="anh6" width="360" height="250" class="img-responsive"/>						
+						<div class="khung"> 				
+				            <h3 class="khoahoc">Ruby on Rails 5 qua các dự án</h3>		            			          
+			   			</div>	
+			   		</div>	
+				</a>
+			</div>
+
+			<div class="col-xs-6 col-md-3 hieuung zoom-effect-container">
+				<a href="php.html">
+					<div class="maunenk">						
+						<img src="img/php7.jpg" alt="anh4" title="anh4" width="360" height="250" class="img-responsive"/>						
+						<div class="khung"> 			
+						    <h3 class="khoahoc">Lập trình PHP qua các dự án thực tế</h3>				                
+					    </div>     
+				    </div> 
+				</a>                 	          	
+	        </div>
+	    	
+		  </div>
+		</div>
+
+    		
+
+    		
+
+    		
+	    	
+    		
     </section>
 
 

@@ -145,7 +145,7 @@
 
 .tho {
 	display: inline-block;
-	width: 49%;
+	width: 100%;
 	background: #28a1b1;
 	color: white;
 	text-align: center;	
@@ -316,7 +316,17 @@ a {
 	height: 50px;
 }
 
+.xuongty {
+	margin-top: 6px;
+}
 
+.xuongty1 {
+	margin-top: 10px;
+}
+
+.well {
+	height: 550px;
+}
 
 
 
