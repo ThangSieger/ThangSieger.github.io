@@ -181,10 +181,8 @@
 }
 
 #html {
-	height: 300px;
-	/*width: 30%;*/
+	height: 300px;	
 	width: 100%;
-	/*margin: 0 3% 0 3%;*/
 	float: left;	
 }
 
@@ -317,19 +315,6 @@ a {
 .tieudebang {
 	height: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

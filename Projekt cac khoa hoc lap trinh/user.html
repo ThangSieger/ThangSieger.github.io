@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Techmaster</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/images.png" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style01.css">
+</head>
+
+<body>
+	<header class="container">
+
+		<div>
+			<p>
+			</p>
+		</div>
+
+		<div class="sign">
+			<div class="signup">
+				<!-- Button đăng ký -->
+				<button type="button" class="btn btn-primary btn-lg dk" data-toggle="modal" data-target="#dangky">Đăng ký</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="dangky" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Đăng ký</h4>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+						  <div class="form-group">
+						    <label for="Email">Địa chỉ Email</label>
+						    <input type="email" class="form-control" id="Email" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <label for="Password">Mật khẩu</label>
+						    <input type="password" class="form-control" id="Password" placeholder="Password">
+						  </div>						  
+						  <div class="form-group">
+						    <label for="Name">Họ và Tên</label>
+						    <input type="Name" class="form-control" id="Name" placeholder="Name">
+						  </div>
+						  <div class="form-group">
+						    <label for="Telephone">Số điện thoại</label>
+						    <input type="Telephone" class="form-control" id="Telephone" placeholder="Telephone">
+						  </div>
+						  <div>
+						  	<div class="modal-footer">					        
+					        	<button type="button" class="btn btn-primary">Đăng ký</button>
+					      	</div>
+						  </div>
+						</form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class = "signin">
+				<!-- Button đăng nhập -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button>
+
+				<!-- Đăng nhập -->
+				<div class="modal fade" id="dangnhap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+						  <div class="form-group">
+						    <label for="Email">Địa chỉ Email</label>
+						    <input type="email" class="form-control" id="Email" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <label for="Password">Mật khẩu</label>
+						    <input type="password" class="form-control" id="Password" placeholder="Password">
+						  </div>						  
+						  <div class="checkbox">
+						    <label style = "float: left;">
+						      <input type="checkbox"> Ghi nhớ mật khẩu
+						    </label>
+						    <p style = "float: right;"><a href="http://www.vietgiaitri.com/dep-xinh/nguoi-dep/2015/08/man-nhan-voi-hinh-anh-gai-xinh-nong-bong-den-ngat-tho-tren-facebook/">Quên mật khẩu</a></p>
+						  </div> 
+						  <br>
+						  <br>
+						  <div>
+						  	<div class="modal-footer">					        
+					        	<button type="button" class="btn btn-primary">Đăng nhập</button>
+					      	</div>
+						  </div>						  
+						</form>
+				      </div>				      
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>	
+
+		<div class="header_bg">
+			<div class="container">
+				<div class="header">
+					<div class="logo">
+						<a href="trangchu01.html">
+							<img src="img/download.jpeg">	
+						</a>
+					</div>
+					<div class="h_menu">
+							<a id="touch-menu" class = "mobile-menu" href="#">Menu</a>
+						<nav>
+							<ul class="menu list-unstyled nav nav-pills">
+								<li role="presentation">
+									<a href="trangchu01.html" class="img-responsive">Trang chủ</a>
+								</li>
+								<li role="presentation">
+									<a href="khoahoc.html" class="img-responsive">Khóa học</a>
+								</li>	
+								<li role="presentation">
+									<a href="codefree.html" class="img-responsive">Code online</a>
+								</li>	
+								<li role="presentation">
+									<a href="bangxephang.html" class="img-responsive">Bảng xếp hạng</a>
+								</li>					
+							</ul>
+						</nav>									
+					</div>	
+				</div>	
+			</div>
+		</div>
+		<br>				     	
+    </header>
+
+    <section class="container">
+    	<div class="row">
+    		<div class="col-md-4">
+    			<ul class="nav nav-pills nav-stacked">
+				  <li role="presentation"><a href="#">Khóa học của tôi</a></li>
+				  <li role="presentation"><a href="#">Thông báo</a></li>
+				  <li role="presentation" class="active"><a href="#">Hồ sơ cá nhân</a></li>
+				  <li role="presentation"><a href="#">Lịch sử gia dịch</a></li>
+				</ul>
+
+    		</div>
+
+    		<div class="col-md-8">
+
+
+    		</div>
+
+
+    	</div>
+    </section>
+
+
+    <script type="text/javascript" src="javascript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+</body>
+</html>
