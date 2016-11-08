@@ -297,7 +297,7 @@ a {
 }
 
 .panel-heading {
-	text-align: center;
+	text-align: left;
 }
 
 .XP {
@@ -331,6 +331,23 @@ a {
 .khoahoccuatoi {
 	margin-left: 20px;
 }
+
+/*.video {
+	height: 100px;
+	width: 150px;
+}*/
+
+.well1 {
+	height: 900px
+}
+
+.noidunghocc {
+	height: 530px;
+	box-sizing: border-box;	
+}
+
+
+
 
 
 
