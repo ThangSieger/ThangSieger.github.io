@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Kanban Board</title>		
+		<link rel="icon" type="image/png" href="img/images.png" />	
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+	    <link type="text/css" rel="stylesheet" href="plugins/materialize/css/materialize.min.css"  media="screen,projection"/>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">	   	
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+	  	<nav>
+	    	<div class="nav-wrapper">
+	      		<a href="#" class="brand-logo center">KANBAN BOARD</a>
+	    	</div>
+	  	</nav>
+
+	  	<br>
+
+	  	<section class="container">
+	  		<div class="row">
+	  			<div class="col m4">
+	  				<div class="card tieude">
+	  					<h5 class="chu" >TODO (4)</h5>
+  					  	<div class="collection sorted-list">
+				    	    <a href="#!" class="collection-item">Alvin</a>
+					        <a href="#!" class="collection-item active">Alvin</a>
+					        <a href="#!" class="collection-item">Alvin</a>
+					        <a href="#!" class="collection-item">Alvin</a>
+			    	    </div>
+	  				</div>
+	  			</div>
+
+	  			<div class="col m4">
+	  				<div class="card tieude">
+	  					<h5 class="chu">DOING (1)</h5>
+  					  	<div class="collection sorted-list">
+				    	    <a href="#!" class="collection-item">Alvin</a>					        
+			    	    </div>
+	  				</div>
+	  			</div>
+
+	  			<div class="col m4">
+	  				<div class="card tieude">
+	  					<h5 class="chu">DONE (3)</h5>
+  					  	<div class="collection sorted-list">
+				    	    <a href="#!" class="collection-item">Alvin</a>
+					        <a href="#!" class="collection-item active">Alvin</a>
+					        <a href="#!" class="collection-item">Alvin</a>					        
+			    	    </div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</section>
+
+	  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	  	<script type="text/javascript" src="plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	  	<script type="text/javascript" src="plugins/materialize/js/materialize.min.js"></script>
+
+	   
+	    <script>
+	 		$( function() {
+	  		  	$( ".sorted-list" ).sortable({
+	  	   			connectWith: ".sorted-list"
+	   		 	}).disableSelection();
+	  		} );
+	  	</script>		
+	</body>	
+</html>
