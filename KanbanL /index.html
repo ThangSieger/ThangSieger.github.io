@@ -5,13 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Kanban Board</title>		
 		<link rel="icon" type="image/png" href="img/images.png" />	
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+	<!-- 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">     -->  
 	    <link type="text/css" rel="stylesheet" href="plugins/materialize/css/materialize.min.css"  media="screen,projection"/>
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">	   	
-	    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">	   	
+ -->	    <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
+		
 	  	<nav>
 	    	<div class="nav-wrapper">
 	      		<a href="#" class="brand-logo center">KANBAN BOARD</a>
@@ -49,7 +50,9 @@
   					  	<div class="collection sorted-list">
 				    	    <a href="#!" class="collection-item">Alvin</a>
 					        <a href="#!" class="collection-item active">Alvin</a>
-					        <a href="#!" class="collection-item">Alvin</a>					        
+					        <a href="#!" class="collection-item">Alvin</a>	
+					        <span id="done"></span>
+					        <input type="text" onkeydown='get(event, "done", this)'>				        
 			    	    </div>
 	  				</div>
 	  			</div>
@@ -62,10 +65,35 @@
 
 	   
 	    <script>
+	    	function add(type, value) {
+	    		var item =  '<a href="#!" class="collection-item">'+value+'</a>';
+	    		$('#'+type).append(item);
+	    	}
+	    	function get(e, type, input) {
+	    		
+	    		var t = window.event || e;
+	    		var value = input.val();
+	    		if (t.keyCode == 13 && input.val() != '') {
+	    			//Them moi vao
+	    			add(type, value);
+	    			//Reset lai cu
+
+	    		} 
+	    	}
+
+	    	
+
 	 		$( function() {
 	  		  	$( ".sorted-list" ).sortable({
-	  	   			connectWith: ".sorted-list"
-	   		 	}).disableSelection();
+	  	   			connectWith: ".sorted-list",
+	  	   			placeholder: 'ui-state-hightlight',
+	  	   			start: function (event, ui) {
+	  	   				$(ui.item[0]).addClass('dragging');
+	  	   			}
+	  	   			stop: function (event, ui) {
+	  	   				$(ui.item[0]).removeClass('dragging');
+	  	   			}
+	   		 	});
 	  		} );
 	  	</script>		
 	</body>	
