@@ -69,11 +69,11 @@
 	    		var item =  '<a href="#!" class="collection-item">'+value+'</a>';
 	    		$('#'+type).append(item);
 	    	}
-	    	function get(e, type, input) {
-	    		
+
+	    	function get(e, type, input) {	    		
 	    		var t = window.event || e;
 	    		var value = input.val();
-	    		if (t.keyCode == 13 && input.val() != '') {
+	    		if (t.keyCode === 13 && input.val() != '') {
 	    			//Them moi vao
 	    			add(type, value);
 	    			//Reset lai cu
@@ -81,8 +81,12 @@
 	    		} 
 	    	}
 
-	    	
+	    	: function (type, jobName) {
+	    		var item = '<div href="#!" class="collection-item">' + jobName + '<span class="badge"><i class="tiny material-icons">delete</i></span>' + '</div>';
+	    	}
 
+	    	$('#' + type).append(item);
+	    	
 	 		$( function() {
 	  		  	$( ".sorted-list" ).sortable({
 	  	   			connectWith: ".sorted-list",
