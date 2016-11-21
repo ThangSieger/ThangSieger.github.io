@@ -81,11 +81,22 @@
 	    		} 
 	    	}
 
-	    	function ten(type, jobName) {
-	    		var item = '<div href="#!" class="collection-item">' + jobName + '<span class="badge"><i class="tiny material-icons">delete</i></span>' + '</div>';
+	    	addJobToList: function ten(type, jobName) {
+	    		var item = '<div href="#!" class="collection-item">' + jobName + '<span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete</i></span>' + '</div>';
 	    	}
 
-	    	
+	    	deleteJob: function xoa(span) {
+	    		var modal = $('#modal-confirm');
+	    		var item = $(span).parent();
+
+	    		modal.openModal();
+
+	    		$('#btn-delete').on('click', function() {
+	    			item.remove();
+	    			modal.closeModal();
+	    		});
+	    		// item.remove();
+	    	}
 	    	
 	 		$( function() {
 	  		  	$( ".sorted-list" ).sortable({
